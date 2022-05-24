@@ -38,16 +38,18 @@ nav {
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.066);
 }
 
-ul {
+.nav-list {
     display: flex;
     list-style: none;
     justify-content: flex-end;
+    align-items: center;
 }
 
-li {
+.nav-list-li {
     display: flex;
     justify-content: center;
 }
+
 .log-in {
     margin: 1em 2em;
     text-decoration: none;
