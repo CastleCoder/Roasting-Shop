@@ -21,18 +21,18 @@ class Items {
     }
 };
 
-const item1 = new Items("", "", "", true, "", "");
-const item2 = new Items("", "", "", true, "", "");
-const item3 = new Items("", "", "", true, "", "");
-const item4 = new Items("", "", "", true, "", "");
-const item5 = new Items("", "", "", true, "", "");
-const item6 = new Items("", "", "", true, "", "");
-const item7 = new Items("", "", "", true, "", "");
-const item8 = new Items("", "", "", true, "", "");
-const item9 = new Items("", "", "", true, "", "");
-const item10 = new Items("", "", "", true, "", "");
-const item11 = new Items("", "", "", true, "", "");
-const item12 = new Items("", "", "", true, "", "");
+const item1 = new Items('/assets/paquets/paquet retouché.png', "chocolat noir", " à partir de 18€", true, "café saveur chocolat noir", "Pérou");
+const item2 = new Items('/assets/paquets/paquet retouché.png', "chocolat noir", " à partir de 18€", true, "café saveur chocolat noir", "Pérou");
+const item3 = new Items('/assets/paquets/paquet retouché.png', "chocolat noir", " à partir de 18€", true, "café saveur chocolat noir", "Pérou");
+const item4 = new Items('/assets/paquets/paquet retouché.png', "chocolat noir", " à partir de 18€", true, "café saveur chocolat noir", "Pérou");
+const item5 = new Items('/assets/paquets/paquet retouché.png', "chocolat noir", " à partir de 18€", true, "café saveur chocolat noir", "Pérou");
+const item6 = new Items('/assets/paquets/paquet retouché.png', "chocolat noir", " à partir de 18€", true, "café saveur chocolat noir", "Pérou");
+const item7 = new Items('/assets/paquets/paquet retouché.png', "chocolat noir", " à partir de 18€", true, "café saveur chocolat noir", "Pérou");
+const item8 = new Items('/assets/paquets/paquet retouché.png', "chocolat noir", " à partir de 18€", true, "café saveur chocolat noir", "Pérou");
+const item9 = new Items('/assets/paquets/paquet retouché.png', "chocolat noir", " à partir de 18€", true, "café saveur chocolat noir", "Pérou");
+const item10 = new Items('/assets/paquets/paquet retouché.png', "chocolat noir", " à partir de 18€", true, "café saveur chocolat noir", "Pérou");
+const item11 = new Items('/assets/paquets/paquet retouché.png', "chocolat noir", " à partir de 18€", true, "café saveur chocolat noir", "Pérou");
+const item12 = new Items('/assets/paquets/paquet retouché.png', "chocolat noir", " à partir de 18€", true, "café saveur chocolat noir", "Pérou");
 
 
 function myItem(element) {
@@ -43,7 +43,7 @@ function myItem(element) {
     store.innerHTML =
     `
     <div class="topOfTheCard">
-        <img class="picCard" src="${element.profilPic}" alt="">
+        <img class="picCard" src="${element.profilPic}" alt="${element.description}">
     </div>
     <div class = "bottom">
         <p>${element.country}</p>
