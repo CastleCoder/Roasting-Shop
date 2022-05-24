@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 86px;
+    width: 100%;
+    display: flex;
+    font-family: 'Kanit', sans-serif;
+    background-color: #C0AA83;
+}
+
+.nav-bar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 86px;
+    object-fit: cover;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.066);
+}
+
+.nav-bar-user {
+    width: 30%;
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.066);
+}
+
+.nav-bar-mid {
+    width: 60%;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.066);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+}
+.log-in {
+    margin: 1em 2em;
+    text-decoration: none;
+    color: black;
+}
+
+.logo-coffee {
+    height: 100px;
+    cursor: pointer;
+}
+
+.logo-shopping-cart {
+    height: 36px;
+    margin: 0.8em 2em;
+    cursor: pointer;
+}
+
+.logo-burger {
+    height: 46px;
+    margin: 0.5em 2em;
+    cursor: pointer;
+}
