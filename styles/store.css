@@ -3,7 +3,8 @@
 
 
 * {
-    padding: 0;
+    padding-top: 0.3em;
+    padding-left: 0.5em;
     margin: 0;
     font-family: 'Kanit', sans-serif;
 }
@@ -18,6 +19,10 @@ main{
     flex-direction: column;
 }
 
+ul{
+    list-style: none;
+}
+
 
 #top-div{
     width: 100%;
@@ -29,7 +34,21 @@ main{
 #top-of-top-div {
     display: flex;
     justify-content:flex-end;
+    column-gap: 2em;
+    height: 70px;
+    
 
+}
+
+#top-of-top-div button{
+    height: 40px;
+
+}
+
+#bottom-of-top-div{
+    height: 50px;
+    font-weight: 500;
+    font-size: 1.5em;
 }
 
 #top-div ul{
