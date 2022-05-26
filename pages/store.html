@@ -29,48 +29,67 @@
         <section id="bottom-div">
             <section id="filter">
                 <h2>Filtrer par catégorie</h2>
-                <ul> Cafés
+                <ul id="coffee-filter"> Cafés
                     <li>Les classiques | 4</li>
                     <li>Les cafés de saison | 5</li>
                     <li>Les éditions limités | 3</li>
                 </ul>
 
-                <h2>Par marque</h2>
-                <!-- <h2>Torréfaction</h2>
-                <ul>
-                    <li><button>ESPRESSO</button></li>
-                    <li><button>FILTRE</button></li>
-                    <li><button>MACHINE AUTO</button></li>
-                </ul> -->
-                <!-- <h2>Méthode</h2>
-                <ul>
-                    <li><button>LAVÉE</button></li>
-                    <li><button>NATURELLE & HONEY</button></li>
-                    <li><button>EXPÉRIMENTALE</button></li>
-                </ul> -->
+                <h2 id="brandt-filter">Par marque</h2>
+
+                
                 <h2>Notre sélection</h2>
-                <ul>
+                <select name="Notre sélection" id="selection-filter">
+                    <option value="none">Aucun</option>
+                    <option value="Assemblage">Assemblage</option>
+                    <option value="Coopérative">Coopérative</option>
+                    <option value="Producteur">Producteur</option>
+                </select>
+
+                <!-- <ul class="selection-filter">
                     <li><button>ASSEMBLAGE</button></li>
                     <li><button>COOPÉRATIVE</button></li>
-                    <li><button>PRODUCTEUR</button></li>
-                </ul>
+                    <li><button>PRODUCTEUR</button></li> -->
+                <!-- </ul> -->
+
+
+
                 <h2>Profil aromatique</h2>
-                <ul>
+                <select name="Profil aromatique" id="aromatic-filter">
+                    <option value="none">Aucun</option>
+                    <option value="Chocolaté & Corsé">CHOCOLATÉ & CORSÉ</option>
+                    <option value="Fruité & Floral">FRUITÉ & FLORAL</option>
+                </select>
+
+                <!-- <ul class="aromatic-filter">
                     <li><button>CHOCOLATÉ & CORSÉ</button></li>
                     <li><button>FRUITÉ & FLORAL</button></li>
-                </ul>
+                </ul> -->
+
+
+
+
+
+
                 <h2>Bio</h2>
-                <ul>
+                <select name="Bio" id="bio-filter">
+                    <option value="none">Aucun</option>
+                    <option value="true">OUI</option>
+                    <option value="false">NON</option>
+                </select>
+
+                <!-- <ul class="bio-filter">
                     <li><button>Oui</button></li>
                     <li><button>Non</button></li>
-                </ul>
+                </ul> -->
 
 
 
 
 
             </section>
-            <section id="item"></section>
+            <section id="item">
+            </section>
         </section>
     </main>
 
