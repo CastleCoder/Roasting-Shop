@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&family=Lexend+Deca:wght@500;700&family=Roboto:wght@400;500&display=swap');
+
+
+
 * {
-    padding: 0;
+    padding-top: 0.3em;
+    padding-left: 0.5em;
     margin: 0;
+    font-family: 'Kanit', sans-serif;
 }
 
 body{
@@ -13,30 +19,48 @@ main{
     flex-direction: column;
 }
 
+ul{
+    list-style: none;
+}
 
-#topdiv{
+
+#top-div{
     width: 100%;
     height: 15%;
     display: flex;
     flex-direction: column;
 }
 
-#topOfTopDiv {
+#top-of-top-div {
     display: flex;
     justify-content:flex-end;
+    column-gap: 2em;
+    height: 70px;
+    
 
 }
 
-#topdiv ul{
+#top-of-top-div button{
+    height: 40px;
+
+}
+
+#bottom-of-top-div{
+    height: 50px;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+#top-div ul{
     display: flex;
 }
 
 
-#tagbuttons{
+#tag-buttons{
     display: flex;
 }
 
-#bottomdiv{
+#bottom-div{
     width: 100%;
     height: 85%;
     display: flex;
@@ -45,7 +69,18 @@ main{
 
 #filter{
     width: 20%;
-    background-color: blue;
+}
+
+#filter h2{
+    line-height: 3em;
+}
+
+#filter ul{
+    line-height: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
 
@@ -61,14 +96,14 @@ main{
     padding-bottom: 1em;
 }
 
-.divStore{
+.div-store{
     width: 27%;
 }
 
-.divStore .topOfTheCard{
+.div-store .top-of-the-card{
     width: 100%;
 }
 
-.divStore .topOfTheCard .picCard{
+.div-store .top-of-the-card .pic-card{
     width: 100%;
 }
