@@ -36,14 +36,12 @@ ul{
     justify-content:flex-end;
     column-gap: 2em;
     height: 70px;
+    padding-right: 4em;
+    align-items: center;
     
 
 }
 
-#top-of-top-div button{
-    height: 40px;
-
-}
 
 #bottom-of-top-div{
     height: 50px;
@@ -106,4 +104,8 @@ ul{
 
 .div-store .top-of-the-card .pic-card{
     width: 100%;
+}
+
+#bottom-div select{
+    margin-left: 1em;
 }

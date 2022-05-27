@@ -95,7 +95,7 @@ selectByAromaticProfil.addEventListener("change", (e) => {
     const newAromaticArr = arrStore.filter (item => item.aromaticProfil === aromaticSelection);
     itemContainer.innerHTML = ``;
     myItem(newAromaticArr);
-    if(selection === "none") {
+    if(aromaticSelection === "none") {
         myItem(arrStore);
     }
 });
@@ -109,10 +109,54 @@ selectIfBio.addEventListener("change", (e) => {
     const newBioArr = arrStore.filter (item => item.isBio === bioSelection);
     itemContainer.innerHTML = ``;
     myItem(newBioArr);
-    if(selection === "none") {
+    if(bioSelection === "none") {
         myItem(arrStore);
     }
 });
+
+
+//? filtrer par tag
+
+const selectTag = document.querySelector("#tag-filter")
+
+selectTag.addEventListener("change", (e) => {
+   const tagSelection = e.target.value;
+   const newTagArr = arrStore.filter (item => item.isBio === tagSelection);
+   const newTagArr2 = arrStore.filter (item => item.aromaticProfil === tagSelection);
+
+   itemContainer.innerHTML = ``;
+   myItem(newTagArr);
+   myItem(newTagArr2);
+   if (tagSelection ==="none"){
+       myItem(arrStore)
+   }
+});
+
+
+//& filtrer par café
+
+const selectCoffee = document.querySelector("#coffee-tag")
+
+selectCoffee.addEventListener("change", (e) => {
+    const coffeeSelection = e.target.value;
+    const newCoffeeArr = arrStore.filter (item => item.title === coffeeSelection);
+
+    itemContainer.innerHTML = ``;
+    myItem(newCoffeeArr);
+    if (coffeeSelection ==="none"){
+        myItem(arrStore)
+    }
+ 
+})
+
+
+
+//todo voir le nombre d'article affiché
+let showElementsSentence = document.querySelector("#top-div-filter");
+showElementsSentence.textContent = `AFFICHER TOUS LES ${myItem.length+1} RÉSULTATS`
+
+
+
 
 
 
