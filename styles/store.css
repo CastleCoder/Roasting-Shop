@@ -49,6 +49,10 @@ ul{
     font-size: 1.5em;
 }
 
+#bottom-of-top-div button{
+    
+}
+
 #top-div ul{
     display: flex;
 }
@@ -109,3 +113,23 @@ ul{
 #bottom-div select{
     margin-left: 1em;
 }
+
+.coffee-filter{
+    border: none;
+    background-color: transparent;
+}
+
+#main-filter input{
+    font-size: 20px;
+}
+
+#secondary-filter input{
+    margin-left: 1em;
+    font-size: 15px;
+}
+
+#secondary-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+};

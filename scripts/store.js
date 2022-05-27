@@ -149,11 +149,43 @@ selectCoffee.addEventListener("change", (e) => {
  
 })
 
+//= filtrer par catégorie en cliquant sur la ligne
+
+const selectByClicking = document.querySelector("#coffee-filter")
+
+selectByClicking.addEventListener("click", (e)=>{
+    const typeOfCoffee = e.target.value
+    let newCoffeeArrByType;
+    switch (typeOfCoffee) {
+        case "Les classiques":
+            newCoffeeArrByType = arrStore.filter (item => item.coffeeType === typeOfCoffee)
+            break;
+
+        case "Les cafés de saison":
+            newCoffeeArrByType = arrStore.filter (item => item.coffeeType === typeOfCoffee)
+            break;
+
+        case "Les éditions limités":
+            newCoffeeArrByType = arrStore.filter (item => item.coffeeType === typeOfCoffee)
+            break;
+
+        case "Cafés":
+            myItem(arrStore)
+            break;
+    
+
+   
+    
+        default:
+            break;
+    }
+})
+
 
 
 //todo voir le nombre d'article affiché
 let showElementsSentence = document.querySelector("#top-div-filter");
-showElementsSentence.textContent = `AFFICHER TOUS LES ${myItem.length+1} RÉSULTATS`
+showElementsSentence.textContent = `AFFICHER TOUS LES ${arrStore.length} RÉSULTATS`
 
 
 
