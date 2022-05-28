@@ -36,20 +36,22 @@ ul{
     justify-content:flex-end;
     column-gap: 2em;
     height: 70px;
+    padding-right: 4em;
+    align-items: center;
     
 
 }
 
-#top-of-top-div button{
-    height: 40px;
-
-}
 
 #bottom-of-top-div{
     height: 50px;
     font-weight: 500;
     font-size: 1.5em;
 }
+
+/* #bottom-of-top-div button{
+    
+} */
 
 #top-div ul{
     display: flex;
@@ -102,8 +104,33 @@ ul{
 
 .div-store .top-of-the-card{
     width: 100%;
+    background-color: #ccb999;
 }
 
 .div-store .top-of-the-card .pic-card{
     width: 100%;
 }
+
+#bottom-div select{
+    margin-left: 1em;
+}
+
+.coffee-filter{
+    border: none;
+    background-color: transparent;
+}
+
+#main-filter input{
+    font-size: 20px;
+}
+
+#secondary-filter input{
+    margin-left: 1em;
+    font-size: 15px;
+}
+
+#secondary-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+};

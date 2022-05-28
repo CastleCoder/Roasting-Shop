@@ -15,62 +15,103 @@
     <main>
         <section id="top-div">
             <div id="top-of-top-div">
-                <ul>
-                    <li>AFFICHER TOUS LES BLABLA RÉSULTATS</li>
-                    <li id="tag-buttons">
-                        <button>TRI PAR DEFAULT</button>
-                        <button>TAGS</button>
-                        <button>CAFÉS</button>
-                    </li>
-                </ul>
+                <h4 id="top-div-filter"></h4>
+                <select name="TAG" id="tag-filter">
+                    <option value="none">TAG</option>
+                    <option value="none">Aucun</option>
+                    <option value="true">BIO</option>
+                    <option value="Chocolaté & Corsé">CHOCOLATÉ & CORSÉ</option>
+                    <option value="Fruité & Floral">FRUITÉ & FLORAL</option>
+                </select>
+
+                <select name="coffee" id="coffee-tag" >
+                    <option value="none">Type de café</option>
+                    <option value="none">Aucun</option>
+                    <option value="Ananas & Mangue">Ananas & Mangue</option>
+                    <option value="Caramel & Noisette">Caramel & Noisette</option>
+                    <option value="Chocolat & Caramel">Chocolat & Caramel</option>
+                    <option value="Chocolat & Noisette">Chocolat & Noisette</option>
+                    <option value="Chocolat Noir">Chocolat Noir</option>
+                    <option value="Fleur D'Oranger & Limoncello">Fleur D'Oranger & Limoncello</option>
+                    <option value="Grenade & Goyave">Grenade & Goyave</option>
+                    <option value="Myrtille & Violettes">Myrtille & Violettes</option>
+                    <option value="Noisette & Caramel">Noisette & Caramel</option>
+                    <option value="Noix de Coco & Menthe">Noix de Coco & Menthe</option>
+                    <option value="Pêche">Pêche</option>
+                </select>
+
+
+
             </div>
             <div id="bottom-of-top-div">Café</div>
         </section>
         <section id="bottom-div">
             <section id="filter">
                 <h2>Filtrer par catégorie</h2>
-                <ul> Cafés
-                    <li>Les classiques | 4</li>
-                    <li>Les cafés de saison | 5</li>
-                    <li>Les éditions limités | 3</li>
-                </ul>
+                    <div id="main-filter">
+                        <input class="coffee-filter" type="button" value="Cafés" onclick="filterObjects('all')">
+                    </div>
+                    <div id="secondary-filter">
+                        <input class="coffee-filter" type="button" value="Les classiques" onclick="filterObjects('les classiques')">
+                        <input class="coffee-filter" type="button" value="Les cafés de saison" onclick="filterObjects('les cafés de saison')">
+                        <input class="coffee-filter" type="button" value="Les éditions limités" onclick="filterObjects('les éditions limités')">
+                    </div>
 
-                <h2>Par marque</h2>
-                <!-- <h2>Torréfaction</h2>
-                <ul>
-                    <li><button>ESPRESSO</button></li>
-                    <li><button>FILTRE</button></li>
-                    <li><button>MACHINE AUTO</button></li>
-                </ul> -->
-                <!-- <h2>Méthode</h2>
-                <ul>
-                    <li><button>LAVÉE</button></li>
-                    <li><button>NATURELLE & HONEY</button></li>
-                    <li><button>EXPÉRIMENTALE</button></li>
-                </ul> -->
+                <h2 id="brandt-filter">Par marque</h2>
+
+                
                 <h2>Notre sélection</h2>
-                <ul>
+                <select name="Notre sélection" id="selection-filter">
+                    <option value="none">Aucun</option>
+                    <option value="Assemblage">Assemblage</option>
+                    <option value="Coopérative">Coopérative</option>
+                    <option value="Producteur">Producteur</option>
+                </select>
+
+                <!-- <ul class="selection-filter">
                     <li><button>ASSEMBLAGE</button></li>
                     <li><button>COOPÉRATIVE</button></li>
-                    <li><button>PRODUCTEUR</button></li>
-                </ul>
+                    <li><button>PRODUCTEUR</button></li> -->
+                <!-- </ul> -->
+
+
+
                 <h2>Profil aromatique</h2>
-                <ul>
+                <select name="Profil aromatique" id="aromatic-filter">
+                    <option value="none">Aucun</option>
+                    <option value="Chocolaté & Corsé">CHOCOLATÉ & CORSÉ</option>
+                    <option value="Fruité & Floral">FRUITÉ & FLORAL</option>
+                </select>
+
+                <!-- <ul class="aromatic-filter">
                     <li><button>CHOCOLATÉ & CORSÉ</button></li>
                     <li><button>FRUITÉ & FLORAL</button></li>
-                </ul>
+                </ul> -->
+
+
+
+
+
+
                 <h2>Bio</h2>
-                <ul>
+                <select name="Bio" id="bio-filter">
+                    <option value="none">Aucun</option>
+                    <option value="true">OUI</option>
+                    <option value="false">NON</option>
+                </select>
+
+                <!-- <ul class="bio-filter">
                     <li><button>Oui</button></li>
                     <li><button>Non</button></li>
-                </ul>
+                </ul> -->
 
 
 
 
 
             </section>
-            <section id="item"></section>
+            <section id="item">
+            </section>
         </section>
     </main>
 
