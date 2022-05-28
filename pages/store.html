@@ -49,12 +49,12 @@
             <section id="filter">
                 <h2>Filtrer par catégorie</h2>
                     <div id="main-filter">
-                        <input class="coffee-filter" type="button" value="Cafés">
+                        <input class="coffee-filter" type="button" value="Cafés" onclick="filterObjects('all')">
                     </div>
                     <div id="secondary-filter">
-                        <input class="coffee-filter" type="button" value="Les classiques">
-                        <input class="coffee-filter" type="button" value="Les cafés de saiso">
-                        <input class="coffee-filter" type="button" value="Les éditions limités">
+                        <input class="coffee-filter" type="button" value="Les classiques" onclick="filterObjects('les classiques')">
+                        <input class="coffee-filter" type="button" value="Les cafés de saison" onclick="filterObjects('les cafés de saison')">
+                        <input class="coffee-filter" type="button" value="Les éditions limités" onclick="filterObjects('les éditions limités')">
                     </div>
 
                 <h2 id="brandt-filter">Par marque</h2>
