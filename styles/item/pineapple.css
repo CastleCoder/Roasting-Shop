@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&family=Lexend+Deca:wght@500;700&family=Roboto:wght@400;500&display=swap');
+
+* {
+    font-family: 'Kanit', sans-serif;
+}
 
 
 main {
@@ -15,18 +20,26 @@ main {
 .section1-top{
     display: flex;
     width: 100%;
+    align-items: flex-start;
 }
 
 .section1-top-left{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section1-top-left img{
-    width: 100%;
+    max-width: 550px;
 }
 
 .section1-top-right{
     width: 50%;
+}
+
+.section1-top-right-top h1{
+    color: #91c7d7;
 }
 
 .section1-top-right-top ul{
@@ -87,12 +100,25 @@ li.format button{
 }
 
 
+#liste-description{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#liste-description li{
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+
+}
 
 
 
-p #text{
+#text{
     display: flex;
     flex-wrap: wrap;
+    font-size: 9px;
 }
 
 .choice select{
@@ -116,13 +142,14 @@ p #text{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 1em 0 1em 0;
+    margin: 1em 0 0 0;
     line-height: 1em;
 }
 
 .section1-bottom{
     display: flex;
     justify-content: space-evenly;
+    background-color: #bba00647;
 }
 
 .section1-bottom .description-product{
@@ -134,4 +161,31 @@ p #text{
 .section1-bottom h5{
     font-size: 15px;
     
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+}
+
+.section2-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5em;
+}
+
+.section2-top-left{
+    display: flex;
+    align-items: left;
+    width: 30%;
+}
+
+.section2-top-right{
+    width: 45%;
+    background-color: #8dbdce;
+    color: white;
+    font-size: 13px;
+    padding: 2em 3em 2em 3em;
+    line-height : 1.7;
 }
