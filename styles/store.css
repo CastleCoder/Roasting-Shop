@@ -49,6 +49,10 @@ ul{
     font-size: 1.5em;
 }
 
+input.coffee-filter{
+    cursor: pointer;
+}
+
 /* #bottom-of-top-div button{
     
 } */
