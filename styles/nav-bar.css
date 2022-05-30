@@ -6,67 +6,189 @@
     box-sizing: border-box;
 }
 
+main {
+    display: flex;
+}
+
 nav {
-    height: 86px;
+    height: 100px;
     width: 100%;
     display: flex;
     font-family: 'Kanit', sans-serif;
     background-color: #C0AA83;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
 }
 
 .nav-bar-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10%;
-    height: 86px;
+    height: 100px;
     object-fit: cover;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.066);
+    border-right: 0.5px solid rgba(0, 0, 0, 0.082);
+    padding: 0 29.67px;
 }
 
 .nav-bar-user {
-    width: 30%;
-    height: 86px;
+    width: 100%;
+    height: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.066);
 }
 
-.nav-bar-mid {
-    width: 60%;
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.066);
-}
 
-ul {
+.nav-list {
     display: flex;
     list-style: none;
     justify-content: flex-end;
+    align-items: center;
 }
 
-li {
+.nav-list-li {
     display: flex;
     justify-content: center;
 }
+
 .log-in {
-    margin: 1em 2em;
+    margin: 1em 1em;
     text-decoration: none;
     color: black;
+    z-index: 3;
 }
 
 .logo-coffee {
     height: 100px;
     cursor: pointer;
+    z-index: 3;
 }
 
 .logo-shopping-cart {
     height: 36px;
-    margin: 0.8em 2em;
+    margin: 0.8em 1em;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.shopping-link {
+    height: 36px;
+    margin-bottom: 3em;
+    margin-right: 6em;
+
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    min-width: 275px;
+    justify-content: space-between;
+}
+
+.menu-btn-container {
+    padding: 20px;
+}
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    z-index: 3;
+}
+
+.menu-btn_burger {
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    height: 5px;
+    background: black;
+    border: transparent;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
     cursor: pointer;
 }
 
-.logo-burger {
-    height: 46px;
-    margin: 0.5em 2em;
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    background: black;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+
+}
+
+.menu-btn_burger::before {
+    transform: translateY(-13px);
     cursor: pointer;
+}
+
+.menu-btn_burger::after {
+    transform: translateY(13px);
+    cursor: pointer;
+}
+
+.menu-btn.open .menu-btn_burger {
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+.menu-btn.open .menu-btn_burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn_burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.hamburger-container {
+    position: fixed;
+    display: none;
+    width: 275px;
+    min-height: 100vh;
+    background-color: hsl(0 0% 100% / 0.75);
+    border-right: 0.5px solid rgba(0, 0, 0, 0.082);
+    padding-top: 120px;
+    transition: all .2s ease-in-out;
+    z-index: 0;
+}
+
+.hamburger-container.is-active {
+display: block;
+}
+
+a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: #C0AA83;
+    color: black;
+    text-decoration: none;
+}
+
+a li {
+    list-style: none;
+}
+
+a:hover {
+    background-color: #c0aa8394;
+}
+
+.page-container {
+    margin: auto;
+    margin-top: 100px;
+    width: 70%;
 }

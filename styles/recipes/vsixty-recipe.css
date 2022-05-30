@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;700&display=swap');
+
+body {
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+}
+
+section {
+    margin: auto;
+}
+
+.container-top {
+    display: flex;
+    justify-content: center;
+}
+
+.image-top {
+    z-index: -2;
+    width: 640px;
+    height: 854px;
+    margin-left: 5em;
+    background-image: url(/assets/vsixty-recipe/v60.jpg);
+    background-size: cover;
+}
+
+.container-top-text {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 5em;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 0.8em;
+}
+
+p {
+    margin: 0.5em;
+    font-weight: 200;
+}
+
+h3 {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.container-top-text ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container-top-text ul li {
+    margin: 0.5em;
+    margin-left: 0;
+    font-weight: 200;
+    list-style: none;
+}
+
+.container-bottom-fixed {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: -300px;
+}
+
+.container-bottom {
+    z-index: -1;
+    background-color: #C0AA83;
+    width: max-content;
+    padding: 2.5em;
+    margin-left: 3em;
+    position: relative;
+}
+
+.container-bottom h3 {
+    margin-top: 1em;
+}
+
+.container-bottom ul li {
+    list-style: none;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 3em 0;
+}
+
+/*step by step odds*/
+
+.step-by-step-1 {
+    display: flex;
+}
+
+.step-by-step-1 img {
+    width: 45%;
+    margin-left: 3em;
+    margin-right: 2em;
+}
+
+.step-by-step-1-text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 200;
+}
+
+.step-by-step-1-text h4 {
+    font-weight: 400;
+    margin-bottom: 2em;
+}
+
+/*step by step*/
+
+.step-by-step {
+    display: flex;
+    margin-top: 5em;
+}
+
+.step-by-step img {
+    width: 45%;
+    margin-left: 2em;
+    margin-right: 3em;
+}
+
+.step-by-step-text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 200;
+    margin-left: 3em;
+}
+
+.step-by-step h4 {
+    margin-bottom: 2em;
+    font-weight: 400;
+
+}
+
+/*step by step odds*/
+
+.step-by-step-odds{
+    display: flex;
+    margin-top: 4em;
+}
+
+.step-by-step-odds img {
+    width: 45%;
+    margin-left: 3em;
+    margin-right: 2em;
+}
+
+.step-by-step-odds-text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 200;
+}
+
+.step-by-step-odds-text h4 {
+    font-weight: 400;
+    margin-bottom: 2em;
+}
+
+/*step by step final*/
+
+.step-by-step-final {
+    display: flex;
+    margin-top: 5em;
+    margin-bottom: 4em;
+}
+
+.step-by-step-final img {
+    width: 45%;
+    margin-left: 2em;
+    margin-right: 3em;
+}
+
+.step-by-step-text-final {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 200;
+    margin-left: 3em;
+}
+
+.step-by-step-final h4 {
+    margin-bottom: 2em;
+    font-weight: 400;
+}

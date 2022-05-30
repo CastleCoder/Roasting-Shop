@@ -1,37 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/styles/nav-bar.css">
+    <script src="/scripts/nav-bar.js" defer ></script>
 </head>
 <body>
 
     <header>
         <nav>
             <div class="nav-bar-logo">
-                <img src="/assets/logo/logo-default.png" alt="" class="logo-coffee">
+                <img src="/assets/logo/logo-coffee-light.png" alt="" class="logo-coffee">
             </div>
             <div class="nav-bar-mid"></div>
             <div class="nav-bar-user">
-                <ul>
-                    <li>
-                        <img src="/assets/logo/shopping-cart.svg" alt="" class="logo-shopping-cart">
-                    </li>
-                    <li>
+                <ul class="nav-list">
+                    <li class="nav-list-li">
                         <a href="contact.html" class="log-in">Se connecter</a>
                     </li>
-                    <li>
-                        <img src="/assets/logo/burger-menu.svg" alt="" class="logo-burger">
+                    <li class="nav-list-li">
+                        <a href="" class="shopping-link">
+                            <img src="/assets/logo/shopping-cart.svg" alt="" class="logo-shopping-cart">
+                        </a>
                     </li>
                 </ul>
+                <div class="menu-btn">
+                    <button class="menu-btn_burger"></button>
+                </div>
             </div>
         </nav>
     </header>
 
-    <main></main>
+    <main class="container">
+        <div class="page-container"></div>
+        <div class="hamburger-container">
+            <ul>
+                <a href="#">
+                    <li>Nos recettes</li>
+                </a>
+                <a href="#">
+                    <li>Notre histoire</li>
+                </a>
+                <a href="#">
+                    <li>Les association que l'on soutient</li>
+                </a>
+                <a href="#">
+                    <li>Voir plus</li>
+                </a>
+            </ul>
+        </div>
+    </main>
 
     <footer></footer>
 
