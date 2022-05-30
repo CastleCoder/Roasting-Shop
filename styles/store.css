@@ -17,6 +17,7 @@ main{
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #FCFBF9;
 }
 
 ul{
@@ -51,6 +52,11 @@ ul{
 
 input.coffee-filter{
     cursor: pointer;
+    padding: 0.5em;
+}
+
+.coffee-filter:hover {
+    background-color: rgba(0, 0, 0, 0.050);
 }
 
 /* #bottom-of-top-div button{
@@ -113,10 +119,12 @@ p {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 3.3em;
+    column-gap: 3em;
     row-gap: 2em;
-    padding-top: 1em;
+    padding-top: 2em;
     padding-bottom: 1em;
+    margin-left: 1em;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.150);
 }
 
 .div-store{
@@ -125,7 +133,7 @@ p {
 
 .div-store .top-of-the-card{
     width: 100%;
-    background-color: #ccb999;
+    background-color: #f1ede4;
 }
 
 .div-store .top-of-the-card .pic-card{
@@ -139,6 +147,7 @@ p {
 .coffee-filter{
     border: none;
     background-color: transparent;
+    margin-bottom: 0.5em;
 }
 
 #main-filter input{
@@ -155,3 +164,7 @@ p {
     flex-direction: column;
     align-items: flex-start;
 };
+
+.page-container {
+    background-color: #FCFBF9;
+}
