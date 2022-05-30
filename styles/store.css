@@ -58,8 +58,8 @@ ul{
 }
 
 
-#tag-buttons{
-    display: flex;
+.tag-option{
+    border: 0.5px solid rgba(0, 0, 0, 0.150);
 }
 
 #bottom-div{
@@ -71,10 +71,13 @@ ul{
 
 #filter{
     width: 20%;
+    margin-right: 2em;
 }
 
 #filter h2{
+    font-size: 22px;
     line-height: 3em;
+    width: max-content;
 }
 
 #filter ul{
@@ -85,6 +88,20 @@ ul{
     gap: 1em;
 }
 
+h3 {
+    width: max-content;
+    font-size: 15px;
+}
+
+.country {
+    padding-top: 0.5em;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+p {
+    font-size: 15px;
+}
 
 #item{
     width: 80%;
@@ -92,8 +109,8 @@ ul{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 3em;
-    row-gap: 1em;
+    column-gap: 3.3em;
+    row-gap: 2em;
     padding-top: 1em;
     padding-bottom: 1em;
 }

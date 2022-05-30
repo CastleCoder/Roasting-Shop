@@ -5,18 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>store</title>
-    <script src="/scripts/store.js" defer></script>
+    <script src="/scripts/store.js" defer ></script>
+    <script src="/scripts/nav-bar.js" defer ></script>
     <link rel="stylesheet" href="/styles/store.css">
+    <link rel="stylesheet" href="/styles/nav-bar.css">
 </head>
 <body>
 
-    <header></header>
+    <header>
+        <nav>
+            <div class="menu-container">
+                <div class="menu-btn-container">
+                    <div class="menu-btn">
+                        <button class="menu-btn_burger"></button>
+                    </div>
+                </div>
+                <div class="nav-bar-logo">
+                    <img src="/assets/logo/logo-coffee-light.png" alt="" class="logo-coffee">
+                </div>
+            </div>
+            <div class="nav-bar-user">
+                <ul class="nav-list">
+                    <li class="nav-list-li">
+                        <a href="contact.html" class="log-in">Se connecter</a>
+                    </li>
+                    <li class="nav-list-li">
+                        <a href="/pages/store.html" class="shopping-link">
+                            <img src="/assets/logo/shopping-cart.svg" alt="" class="logo-shopping-cart">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <main>
+        <div class="hamburger-container">
+            <ul>
+                <a href="/pages/store.html">
+                    <li>Boutique</li>
+                </a>
+                <a href="/pages/nos-recettes.html">
+                    <li>Nos recettes</li>
+                </a>
+                <a href="#">
+                    <li>Notre histoire</li>
+                </a>
+                <a href="#">
+                    <li>Les associations partenaires</li>
+                </a>
+            </ul>
+        </div>
+        <div class="page-container">
         <section id="top-div">
             <div id="top-of-top-div">
                 <h4 id="top-div-filter"></h4>
-                <select name="TAG" id="tag-filter">
+                <select name="TAG" id="tag-filter" class="tag-option">
                     <option value="none">TAG</option>
                     <option value="none">Aucun</option>
                     <option value="true">BIO</option>
@@ -24,7 +68,7 @@
                     <option value="Fruité & Floral">FRUITÉ & FLORAL</option>
                 </select>
 
-                <select name="coffee" id="coffee-tag" >
+                <select name="coffee" id="coffee-tag" class="tag-option">
                     <option value="none">Type de café</option>
                     <option value="none">Aucun</option>
                     <option value="Ananas & Mangue">Ananas & Mangue</option>
@@ -61,7 +105,7 @@
 
                 
                 <h2>Notre sélection</h2>
-                <select name="Notre sélection" id="selection-filter">
+                <select name="Notre sélection" id="selection-filter" class="tag-option">
                     <option value="none">Aucun</option>
                     <option value="Assemblage">Assemblage</option>
                     <option value="Coopérative">Coopérative</option>
@@ -77,7 +121,7 @@
 
 
                 <h2>Profil aromatique</h2>
-                <select name="Profil aromatique" id="aromatic-filter">
+                <select name="Profil aromatique" id="aromatic-filter" class="tag-option">
                     <option value="none">Aucun</option>
                     <option value="Chocolaté & Corsé">CHOCOLATÉ & CORSÉ</option>
                     <option value="Fruité & Floral">FRUITÉ & FLORAL</option>
@@ -94,7 +138,7 @@
 
 
                 <h2>Bio</h2>
-                <select name="Bio" id="bio-filter">
+                <select name="Bio" id="bio-filter" class="tag-option">
                     <option value="none">Aucun</option>
                     <option value="true">OUI</option>
                     <option value="false">NON</option>
@@ -113,6 +157,7 @@
             <section id="item">
             </section>
         </section>
+        </div>
     </main>
 
     <footer></footer>

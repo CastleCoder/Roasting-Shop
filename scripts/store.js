@@ -251,7 +251,7 @@ function myItem(arr) {
             <img class="pic-card" src="${item.profilPic}" alt="${item.description}">
             </div>
             <div class = "bottom">
-            <p>${item.country}</p>
+            <p class="country">${item.country}</p>
             <h3>${item.title}</h3>
             <p>${item.price}</p>
         </div>
