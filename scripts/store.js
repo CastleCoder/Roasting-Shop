@@ -39,7 +39,7 @@ const item6 = new Item('/assets/paquets/Sans background & ecriture/ChocolatNoir2
 const item7 = new Item('/assets/paquets/Sans background & ecriture/FleurDOranger_Limoncello-removebg-preview.png', "Fleur D'Oranger & Limoncello", " à partir de 18€", true, "café saveur fleur d'oranger & limoncello", "Costa Rica","Fruité & Floral","Producteur","Les cafés de saison","false");
 const item8 = new Item('/assets/paquets/Sans background & ecriture/Grenadine_Goyave-removebg-preview.png', "Grenade & Goyave", " à partir de 18€", true, "café saveur Grenade & Goyave", "Colombie","Fruité & Floral","Producteur", "Les éditions limités","false");
 const item9 = new Item('/assets/paquets/Sans background & ecriture/Myrtille_ViolettesDeToulouse-removebg-preview.png', "Myrtille & Violettes", " à partir de 18€", true, "café saveur Myrtille & Violettes", "Pérou","Fruité & Floral","Producteur", "Les éditions limités","false");
-const item10 = new Item('/assets/paquets/Sans background & ecriture/Noisette_Caramel-removebg-preview.png', "Noisette & Caramel", " à partir de 18€", true, "café saveur Noisette & Caramel", "Brésil","Chocolaté & Corsé","Producteur","Producteur","Les cafés de saison","false");
+const item10 = new Item('/assets/paquets/Sans background & ecriture/Noisette_Caramel-removebg-preview.png', "Noisette & Caramel", " à partir de 18€", true, "café saveur Noisette & Caramel", "Brésil","Chocolaté & Corsé","Producteur","Les cafés de saison","false");
 const item11 = new Item('/assets/paquets/Sans background & ecriture/NoixDeCoco_Menthe-removebg-preview (1).png', "Noix de Coco & Menthe", " à partir de 18€", true, "café saveur Noix de Coco & Menthe", "Honduras","Fruité & Floral","Producteur", "Les éditions limités","false");
 const item12 = new Item('/assets/paquets/Sans background & ecriture/Peche-removebg-preview (1).png', "Pêche", " à partir de 18€", true, "café saveur Pêche", "Pérou","Fruité & Floral","Producteur", "Les classiques", "false");
 
@@ -190,14 +190,25 @@ function filterObjects(coffeeTypeOnClick) {
 
     if(coffeeTypeOnClick === "all"){
         itemContainer.innerHTML = ``;
+
+        myItem(arrStore);
         arrlength = arrStore.length;
-    } else if (coffeeTypeOnClick === "Les classiques"){
+    }
+    if (coffeeTypeOnClick === "Les classiques"){
+        itemContainer.innerHTML = ``;
+
         myItem(coffeeTypeSelectionArr);
         arrlength = coffeeTypeSelectionArr.length;
-    } else if(coffeeTypeOnClick === "Les cafés de saison"){
+    }
+    if(coffeeTypeOnClick === "Les cafés de saison"){
+        itemContainer.innerHTML = ``;
+
         myItem(coffeeTypeSelectionArr);
         arrlength = coffeeTypeSelectionArr.length;
-    } else if (coffeeTypeOnClick === "Les éditions limités"){
+    }
+    if (coffeeTypeOnClick === "Les éditions limités"){
+        itemContainer.innerHTML = ``;
+
         myItem(coffeeTypeSelectionArr);
         arrlength = coffeeTypeSelectionArr.length;
     };
