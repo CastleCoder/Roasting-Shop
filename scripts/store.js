@@ -149,11 +149,11 @@ selectTag.addEventListener("change", (e) => {
    itemContainer.innerHTML = ``;
    myItem(newTagArr);
    myItem(newTagArr2);
-   arrlength = newTagArr.length;
-   arrlength = newTagArr2.length;
    if (tagSelection ==="none"){
        myItem(arrStore)
    }
+   arrlength = Number(newTagArr.length)+Number(newTagArr2.length);
+
 
    let showElementsSentence = document.querySelector("#top-div-filter");
    showElementsSentence.textContent = `AFFICHER TOUS LES ${arrlength} RÉSULTATS`
