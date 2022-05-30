@@ -41,7 +41,7 @@ const item8 = new Item('/assets/paquets/Sans background & ecriture/Grenadine_Goy
 const item9 = new Item('/assets/paquets/Sans background & ecriture/Myrtille_ViolettesDeToulouse-removebg-preview.png', "Myrtille & Violettes", " à partir de 18€", true, "café saveur Myrtille & Violettes", "Pérou","Fruité & Floral","Producteur", "Les éditions limités","false");
 const item10 = new Item('/assets/paquets/Sans background & ecriture/Noisette_Caramel-removebg-preview.png', "Noisette & Caramel", " à partir de 18€", true, "café saveur Noisette & Caramel", "Brésil","Chocolaté & Corsé","Producteur","Producteur","Les cafés de saison","false");
 const item11 = new Item('/assets/paquets/Sans background & ecriture/NoixDeCoco_Menthe-removebg-preview (1).png', "Noix de Coco & Menthe", " à partir de 18€", true, "café saveur Noix de Coco & Menthe", "Honduras","Fruité & Floral","Producteur", "Les éditions limités","false");
-const item12 = new Item('/assets/paquets/Sans background & ecriture/Peche-removebg-preview (1).png', "Pêche", " à partir de 18€", true, "café saveur Pêche", "Pérou","Fruité & Floral","Producteur", "Les classiques");
+const item12 = new Item('/assets/paquets/Sans background & ecriture/Peche-removebg-preview (1).png', "Pêche", " à partir de 18€", true, "café saveur Pêche", "Pérou","Fruité & Floral","Producteur", "Les classiques", "false");
 
 
 // function myItem(element) {
@@ -67,6 +67,13 @@ const item12 = new Item('/assets/paquets/Sans background & ecriture/Peche-remove
 //     myItem(arrStore[i]);
 // };
 
+//todo voir le nombre d'article affiché
+
+let arrlength = arrStore.length;
+let showElementsSentence = document.querySelector("#top-div-filter");
+showElementsSentence.textContent = `AFFICHER TOUS LES ${arrlength} RÉSULTATS`
+
+
 const itemContainer = document.querySelector("#item");
 
 
@@ -80,9 +87,14 @@ selectBySelection.addEventListener("change", (e) => {
     const newSelectArr = arrStore.filter(item => item.ourSelection === selection);
     itemContainer.innerHTML = ``;
     myItem(newSelectArr);
+    arrlength = newSelectArr.length;
     if(selection === "none") {
         myItem(arrStore);
     }
+
+    let showElementsSentence = document.querySelector("#top-div-filter");
+    showElementsSentence.textContent = `AFFICHER TOUS LES ${arrlength} RÉSULTATS`
+    
 
 });
 
@@ -95,9 +107,14 @@ selectByAromaticProfil.addEventListener("change", (e) => {
     const newAromaticArr = arrStore.filter (item => item.aromaticProfil === aromaticSelection);
     itemContainer.innerHTML = ``;
     myItem(newAromaticArr);
+    arrlength = newAromaticArr.length;
     if(aromaticSelection === "none") {
         myItem(arrStore);
     }
+
+    let showElementsSentence = document.querySelector("#top-div-filter");
+    showElementsSentence.textContent = `AFFICHER TOUS LES ${arrlength} RÉSULTATS`
+    
 });
 
 //= filtrer par bio
@@ -109,9 +126,14 @@ selectIfBio.addEventListener("change", (e) => {
     const newBioArr = arrStore.filter (item => item.isBio === bioSelection);
     itemContainer.innerHTML = ``;
     myItem(newBioArr);
+    arrlength = newBioArr.length;
     if(bioSelection === "none") {
         myItem(arrStore);
     }
+
+    let showElementsSentence = document.querySelector("#top-div-filter");
+    showElementsSentence.textContent = `AFFICHER TOUS LES ${arrlength} RÉSULTATS`
+    
 });
 
 
@@ -127,9 +149,15 @@ selectTag.addEventListener("change", (e) => {
    itemContainer.innerHTML = ``;
    myItem(newTagArr);
    myItem(newTagArr2);
+   arrlength = newTagArr.length;
+   arrlength = newTagArr2.length;
    if (tagSelection ==="none"){
        myItem(arrStore)
    }
+
+   let showElementsSentence = document.querySelector("#top-div-filter");
+   showElementsSentence.textContent = `AFFICHER TOUS LES ${arrlength} RÉSULTATS`
+   
 });
 
 
@@ -143,46 +171,68 @@ selectCoffee.addEventListener("change", (e) => {
 
     itemContainer.innerHTML = ``;
     myItem(newCoffeeArr);
+    arrlength = newCoffeeArr.length;
     if (coffeeSelection ==="none"){
         myItem(arrStore)
     }
+
+    let showElementsSentence = document.querySelector("#top-div-filter");
+    showElementsSentence.textContent = `AFFICHER TOUS LES ${arrlength} RÉSULTATS`
+    
  
 })
 
-//= filtrer par catégorie en cliquant sur la ligne
+// //= filtrer par catégorie en cliquant sur la ligne
 
-const selectByClicking = document.querySelector("#coffee-filter")
+function filterObjects(coffeeTypeOnClick) {
+    const coffeeTypeSelection = coffeeTypeOnClick;
+    const coffeeTypeSelectionArr = arrStore.filter(item => item.coffeeType === coffeeTypeSelection);
 
-selectByClicking.addEventListener("click", (e)=>{
-    const typeOfCoffee = e.target.value
-    let newCoffeeArrByType;
-    switch (typeOfCoffee) {
-        case "Les classiques":
-            newCoffeeArrByType = arrStore.filter (item => item.coffeeType === typeOfCoffee)
-            break;
+    if(coffeeTypeOnClick === "all"){
+        itemContainer.innerHTML = ``;
+        arrlength = arrStore.length;
+    } else if (coffeeTypeOnClick === "Les classiques"){
+        myItem(coffeeTypeSelectionArr);
+        arrlength = coffeeTypeSelectionArr.length;
+    } else if(coffeeTypeOnClick === "Les cafés de saison"){
+        myItem(coffeeTypeSelectionArr);
+        arrlength = coffeeTypeSelectionArr.length;
+    } else if (coffeeTypeOnClick === "Les éditions limités"){
+        myItem(coffeeTypeSelectionArr);
+        arrlength = coffeeTypeSelectionArr.length;
+    };
 
-        case "Les cafés de saison":
-            newCoffeeArrByType = arrStore.filter (item => item.coffeeType === typeOfCoffee)
-            break;
+    let showElementsSentence = document.querySelector("#top-div-filter");
+    showElementsSentence.textContent = `AFFICHER TOUS LES ${arrlength} RÉSULTATS`
 
-        case "Les éditions limités":
-            newCoffeeArrByType = arrStore.filter (item => item.coffeeType === typeOfCoffee)
-            break;
+}
+// const selectByClicking = document.querySelector("#coffee-filter")
 
-        case "Cafés":
-            myItem(arrStore)
-            break;
+// selectByClicking.addEventListener("click", (e)=>{
+//     const typeOfCoffee = e.target.value
+//     let newCoffeeArrByType;
+//     switch (typeOfCoffee) {
+//         case "Les classiques":
+//             newCoffeeArrByType = arrStore.filter (item => item.coffeeType === typeOfCoffee)
+//             break;
+
+//         case "Les cafés de saison":
+//             newCoffeeArrByType = arrStore.filter (item => item.coffeeType === typeOfCoffee)
+//             break;
+
+//         case "Les éditions limités":
+//             newCoffeeArrByType = arrStore.filter (item => item.coffeeType === typeOfCoffee)
+//             break;
+
+//         case "Cafés":
+//             myItem(arrStore)
+//             break;
        
-        default:
-            break;
-    }
-})
+//         default:
+//             break;
+//     }
+// })
 
-
-
-//todo voir le nombre d'article affiché
-let showElementsSentence = document.querySelector("#top-div-filter");
-showElementsSentence.textContent = `AFFICHER TOUS LES ${arrStore.length} RÉSULTATS`
 
 
 
@@ -253,3 +303,6 @@ myItem(arrStore);
 // console.log(fileteredArr);
 
 //! help
+
+
+
