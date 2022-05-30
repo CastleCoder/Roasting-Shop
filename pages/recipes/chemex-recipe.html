@@ -6,27 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recette Chemex</title>
     <link rel="stylesheet" href="/styles/nav-bar.css">
-    <link rel="stylesheet" href="/styles/recipe/chemex-recipe.css">
+    <link rel="stylesheet" href="/styles/recipes/chemex-recipe.css">
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <script src="/scripts/nav-bar.js" defer ></script>
 </head>
 <body>
 
     <header>
         <nav>
-            <div class="nav-bar-logo">
-                <img src="/assets/logo/logo-coffee-light.png" alt="" class="logo-coffee">
+            <div class="menu-container">
+                <div class="menu-btn-container">
+                    <div class="menu-btn">
+                        <button class="menu-btn_burger"></button>
+                    </div>
+                </div>
+                <div class="nav-bar-logo">
+                    <img src="/assets/logo/logo-coffee-light.png" alt="" class="logo-coffee">
+                </div>
             </div>
-            <div class="nav-bar-mid"></div>
             <div class="nav-bar-user">
                 <ul class="nav-list">
-                    <li class="nav-list-li">
-                        <img src="/assets/logo/shopping-cart.svg" alt="" class="logo-shopping-cart">
-                    </li>
                     <li class="nav-list-li">
                         <a href="contact.html" class="log-in">Se connecter</a>
                     </li>
                     <li class="nav-list-li">
-                        <img src="/assets/logo/burger-menu.svg" alt="" class="logo-burger">
+                        <a href="" class="shopping-link">
+                            <img src="/assets/logo/shopping-cart.svg" alt="" class="logo-shopping-cart">
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -34,123 +40,143 @@
     </header>
     
     <main>
-        <section>
-            <div>
-                <div class="container-top">
-                    <img src="/assets/chemex-recipe/chemex.jpg" alt="">
-                    <div class="container-top-text">
-                        <h1>Chemex</h1>
-                        <p>La Chemex est une cafetière filtre inventée par le</p>
-                        <p> chimiste allemand, Peter Schlumbohm en 1941. La</p>
-                        <p>Chemex est appréciée pour son design en forme de</p>
-                        <p> sablier et surtout pour son style d’extraction. La 6</p>
-                        <p> tasses est idéale pour 5 à 6 personnes.</p>
-                        <h3>Ce qu'il vous faut</h3>
-                        <ul>
-                            <li>Chemex</li>
-                            <li>Filtre Chemex(blanc de préférence)</li>
-                            <li>Bouilloire</li>
-                            <li>Balance</li>
-                        </ul>
+        <div class="hamburger-container">
+            <ul>
+                <a href="#">
+                    <li>Nos recettes</li>
+                </a>
+                <a href="#">
+                    <li>Notre histoire</li>
+                </a>
+                <a href="#">
+                    <li>Les association que l'on soutient</li>
+                </a>
+                <a href="#">
+                    <li>Voir plus</li>
+                </a>
+            </ul>
+        </div>
+        <div class="page-container">
+            <section>
+                <div>
+                    <div class="container-top">
+                        <div class="container-top-text">
+                            <h1>Chemex</h1>
+                            <p>La Chemex est une cafetière filtre inventée par le</p>
+                            <p> chimiste allemand, Peter Schlumbohm en 1941. La</p>
+                            <p>Chemex est appréciée pour son design en forme de</p>
+                            <p> sablier et surtout pour son style d’extraction. La 6</p>
+                            <p> tasses est idéale pour 5 à 6 personnes.</p>
+                            <h3>Ce qu'il vous faut</h3>
+                            <ul>
+                                <li>Chemex</li>
+                                <li>Filtre Chemex(blanc de préférence)</li>
+                                <li>Bouilloire</li>
+                                <li>Balance</li>
+                            </ul>
+                        </div>
+                        <div class="image-top"></div>
+                    </div>
+                    <div class="container-bottom-fixed">
+                        <div class="container-bottom">
+                            <h3>La recette express</h3>
+                            <ul>
+                                <img src="" alt="">
+                                <li>30g de café moulu assez grossièrement</li>
+                                <img src="" alt="">
+                                <li>500g d'eau à 92°C</li>
+                                <img src="" alt="">
+                                <li>~ 4:30 minute de temps d’infusion</li>
+                                <img src="" alt="">
+                                <li>Pré-infusion recommandée</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="container-bottom">
-                    <h3>La recette express</h3>
-                    <ul>
-                        <img src="" alt="">
-                        <li>30g de café moulu assez grossièrement</li>
-                        <img src="" alt="">
-                        <li>500g d'eau à 92°C</li>
-                        <img src="" alt="">
-                        <li>~ 4:30 minute de temps d’infusion</li>
-                        <img src="" alt="">
-                        <li>Pré-infusion recommandée</li>
-                    </ul>
+                <h2>La recette en détail</h2>
+            </section>
+
+            <div class="step-by-step-1">
+                <img src="/assets/chemex-recipe/chemex-1.jpg" alt="">
+                <div class="step-by-step-1-text">
+                    <h4>ÉTAPE 1 : FAIRE FRÉMIR L’EAU & MOUDRE VOTRE CAFÉ</h4>
+                    <span>Faites frémir à petite ébullition 500 ml d’eau (92°C).
+                        Pesez 30g de cafe. Le moudre assez grossièrement : à peine
+                        plus fin que du gros sel de cuisine.
+                    </span>
                 </div>
             </div>
-            <h2>La recette en détail</h2>
-        </section>
 
-        <div class="step-by-step-1">
-            <img src="/assets/chemex-recipe/chemex-1.jpg" alt="">
-            <div class="step-by-step-1-text">
-                <h4>ÉTAPE 1 : FAIRE FRÉMIR L’EAU & MOUDRE VOTRE CAFÉ</h4>
-                <span>Faites frémir à petite ébullition 500 ml d’eau (92°C).
-                     Pesez 30g de cafe. Le moudre assez grossièrement : à peine
-                      plus fin que du gros sel de cuisine.
-                </span>
+            <div class="step-by-step">
+                <div class="step-by-step-text">
+                    <h4>ÉTAPE 2 : FILTRE & PLIAGE</h4>
+                    <span>Positionnez le filtre sur la Chemex, selon le type de filtre dont vous disposez : <br>
+                        Plié carré : vous devez ouvrir un battant pour donner une forme conique <br>
+                        A plat rond : vous devez plier en deux puis à nouveau en deux pour obtenir un cône
+                    </span>
+                </div>
+                <img src="/assets/chemex-recipe/chemex-2.jpg" alt="">
             </div>
-        </div>
 
-        <div class="step-by-step">
-            <div class="step-by-step-text">
-                <h4>ÉTAPE 2 : FILTRE & PLIAGE</h4>
-                <span>Positionnez le filtre sur la Chemex, selon le type de filtre dont vous disposez : <br>
-                    Plié carré : vous devez ouvrir un battant pour donner une forme conique <br>
-                    A plat rond : vous devez plier en deux puis à nouveau en deux pour obtenir un cône
-                </span>
+            <div class="step-by-step-odds">
+                <img src="/assets/chemex-recipe/chemex-3.jpg" alt="">
+                <div class="step-by-step-odds-text">
+                    <h4>ÉTAPE 3 : RINÇAGE & PRÉCHAUFFE</h4>
+                    <span>Rincez le filtre et préchauffez la Chemex en versant une bonne quantité d’eau chaude.
+                    </span>
+                </div>
             </div>
-            <img src="/assets/chemex-recipe/chemex-2.jpg" alt="">
-        </div>
 
-        <div class="step-by-step-odds">
-            <img src="/assets/chemex-recipe/chemex-3.jpg" alt="">
-            <div class="step-by-step-odds-text">
-                <h4>ÉTAPE 3 : RINÇAGE & PRÉCHAUFFE</h4>
-                <span>Rincez le filtre et préchauffez la Chemex en versant une bonne quantité d’eau chaude.
-                </span>
+            <div class="step-by-step">
+                <div class="step-by-step-text">
+                    <h4>ÉTAPE 4 : PRÉPARATION</h4>
+                    <span>Posez la Chemex sur une balance.
+                        Versez les 30g de mouture et tarez.
+                    </span>
+                </div>
+                <img src="/assets/chemex-recipe/chemex-4.jpg" alt="">
             </div>
-        </div>
 
-        <div class="step-by-step">
-            <div class="step-by-step-text">
-                <h4>ÉTAPE 4 : PRÉPARATION</h4>
-                <span>Posez la Chemex sur une balance.
-                    Versez les 30g de mouture et tarez.
-                </span>
+            <div class="step-by-step-odds">
+                <img src="/assets/chemex-recipe/chemex-5.jpg" alt="">
+                <div class="step-by-step-odds-text">
+                    <h4>ÉTAPE 5 : PREMIER VERSEMENT / PRÉINFUSION</h4>
+                    <span>Top Chrono : lancez le chrono lorsque vous versez 60g
+                        d’eau sur la mouture en cherchant à humidifier la totalité
+                        de la mouture, c’est la pré-infusion.
+                    </span>
+                </div>
             </div>
-            <img src="/assets/chemex-recipe/chemex-4.jpg" alt="">
-        </div>
 
-        <div class="step-by-step-odds">
-            <img src="/assets/chemex-recipe/chemex-5.jpg" alt="">
-            <div class="step-by-step-odds-text">
-                <h4>ÉTAPE 5 : PREMIER VERSEMENT / PRÉINFUSION</h4>
-                <span>Top Chrono : lancez le chrono lorsque vous versez 60g
-                     d’eau sur la mouture en cherchant à humidifier la totalité
-                      de la mouture, c’est la pré-infusion.
-                </span>
+            <div class="step-by-step">
+                <div class="step-by-step-text">
+                    <h4>ÉTAPE 6 : 2ÈME VERSEMENT</h4>
+                    <span>À 0:30 versez à nouveau en spirale à partir du centre du café
+                        vers le bord du filtre jusqu’à atteindre 250g sur la balance.
+                    </span>
+                </div>
+                <img src="/assets/chemex-recipe/chemex-6.jpg" alt="">
             </div>
-        </div>
 
-        <div class="step-by-step">
-            <div class="step-by-step-text">
-                <h4>ÉTAPE 6 : 2ÈME VERSEMENT</h4>
-                <span>À 0:30 versez à nouveau en spirale à partir du centre du café
-                     vers le bord du filtre jusqu’à atteindre 250g sur la balance.
-                </span>
+            <div class="step-by-step-odds">
+                <img src="/assets/chemex-recipe/chemex-7.jpg" alt="">
+                <div class="step-by-step-odds-text">
+                    <h4>ÉTAPE 7 : 3ÈME VERSEMENT</h4>
+                    <span>
+                        A 1:30, versez toujours de la même façon jusqu’à 500 g. Les dernières
+                        gouttes devraient finir vers 4:30.
+                    </span>
+                </div>
             </div>
-            <img src="/assets/chemex-recipe/chemex-6.jpg" alt="">
-        </div>
 
-        <div class="step-by-step-odds">
-            <img src="/assets/chemex-recipe/chemex-7.jpg" alt="">
-            <div class="step-by-step-odds-text">
-                <h4>ÉTAPE 7 : 3ÈME VERSEMENT</h4>
-                <span>
-                    A 1:30, versez toujours de la même façon jusqu’à 500 g. Les dernières
-                     gouttes devraient finir vers 4:30.
-                </span>
+            <div class="step-by-step-final">
+                <div class="step-by-step-text-final">
+                    <h4>ÉTAPE 8 : DÉGUSTATION</h4>
+                    <span>Servez vos proches directement avec la Chemex. Succès garanti !
+                    </span>
+                </div>
+                <img src="/assets/chemex-recipe/chemex-8.jpg" alt="">
             </div>
-        </div>
-
-        <div class="step-by-step-final">
-            <div class="step-by-step-text-final">
-                <h4>ÉTAPE 8 : DÉGUSTATION</h4>
-                <span>Servez vos proches directement avec la Chemex. Succès garanti !
-                </span>
-            </div>
-            <img src="/assets/chemex-recipe/chemex-8.jpg" alt="">
         </div>
     </main>
 

@@ -8,25 +8,31 @@
     <link rel="stylesheet" href="/styles/nav-bar.css">
     <link rel="stylesheet" href="/styles/recipes/bialetti-recipe.css">
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <script src="/scripts/nav-bar.js" defer ></script>
 </head>
 <body>
 
     <header>
         <nav>
-            <div class="nav-bar-logo">
-                <img src="/assets/logo/logo-coffee-light.png" alt="" class="logo-coffee">
+            <div class="menu-container">
+                <div class="menu-btn-container">
+                    <div class="menu-btn">
+                        <button class="menu-btn_burger"></button>
+                    </div>
+                </div>
+                <div class="nav-bar-logo">
+                    <img src="/assets/logo/logo-coffee-light.png" alt="" class="logo-coffee">
+                </div>
             </div>
-            <div class="nav-bar-mid"></div>
             <div class="nav-bar-user">
                 <ul class="nav-list">
-                    <li class="nav-list-li">
-                        <img src="/assets/logo/shopping-cart.svg" alt="" class="logo-shopping-cart">
-                    </li>
                     <li class="nav-list-li">
                         <a href="contact.html" class="log-in">Se connecter</a>
                     </li>
                     <li class="nav-list-li">
-                        <img src="/assets/logo/burger-menu.svg" alt="" class="logo-burger">
+                        <a href="" class="shopping-link">
+                            <img src="/assets/logo/shopping-cart.svg" alt="" class="logo-shopping-cart">
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -34,119 +40,139 @@
     </header>
     
     <main>
-        <section>
-            <div>
-                <div class="container-top">
-                    <img src="/assets/bialetti-recipe/bialetti.jpg" alt="">
-                    <div class="container-top-text">
-                        <h1>Moka / Bialetti</h1>
-                        <p>En 1933, une géniale intuition révolutionnera la</p>
-                        <p> manière de préparer le café. La Moka est née grâce à </p>
-                        <p>Alfonso Bialetti (fondateur de la marque). Cette</p>
-                        <p> cafetière au style art déco a transformé l’art de faire</p>
-                        <p> du café au point d’apparaître dans chaque maison</p>
-                        <p>italienne.</p>
-                        <h3>Ce qu'il vous faut</h3>
-                        <ul>
-                            <li>Bialetti</li>
-                            <li>Bouilloire</li>
-                            <li>Moulin</li>
-                            <li>Balance</li>
-                            <li>Timer</li>
-                        </ul>
+        <div class="hamburger-container">
+            <ul>
+                <a href="#">
+                    <li>Nos recettes</li>
+                </a>
+                <a href="#">
+                    <li>Notre histoire</li>
+                </a>
+                <a href="#">
+                    <li>Les association que l'on soutient</li>
+                </a>
+                <a href="#">
+                    <li>Voir plus</li>
+                </a>
+            </ul>
+        </div>
+        <div class="page-container">
+            <section>
+                <div>
+                    <div class="container-top">
+                        <div class="container-top-text">
+                            <h1>Moka / Bialetti</h1>
+                            <p>En 1933, une géniale intuition révolutionnera la</p>
+                            <p> manière de préparer le café. La Moka est née grâce à </p>
+                            <p>Alfonso Bialetti (fondateur de la marque). Cette</p>
+                            <p> cafetière au style art déco a transformé l’art de faire</p>
+                            <p> du café au point d’apparaître dans chaque maison</p>
+                            <p>italienne.</p>
+                            <h3>Ce qu'il vous faut</h3>
+                            <ul>
+                                <li>Bialetti</li>
+                                <li>Bouilloire</li>
+                                <li>Moulin</li>
+                                <li>Balance</li>
+                                <li>Timer</li>
+                            </ul>
+                        </div>
+                        <div class="image-top"></div>
+                    </div>
+                    <div class="container-bottom-fixed">
+                        <div class="container-bottom">
+                            <h3>La recette express</h3>
+                            <ul>
+                                <img src="" alt="">
+                                <li>15g de café moulu finement</li>
+                                <img src="" alt="">
+                                <li>220g d'eau à 92°C</li>
+                                <img src="" alt="">
+                                <li>1:20-1:30 minute de temps d’infusion</li>
+                                <img src="" alt="">
+                                <li>Pré-infusion facultative</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="container-bottom">
-                    <h3>La recette express</h3>
-                    <ul>
-                        <img src="" alt="">
-                        <li>15g de café moulu finement</li>
-                        <img src="" alt="">
-                        <li>220g d'eau à 92°C</li>
-                        <img src="" alt="">
-                        <li>1:20-1:30 minute de temps d’infusion</li>
-                        <img src="" alt="">
-                        <li>Pré-infusion facultative</li>
-                    </ul>
+                <h2>La recette en détail</h2>
+            </section>
+
+            <div class="step-by-step-1">
+                <img src="/assets/bialetti-recipe/bialetti-1.jpg" alt="">
+                <div class="step-by-step-1-text">
+                    <h4>ÉTAPE 1 : MOUDRE VOTRE CAFÉ</h4>
+                    <span>
+                        Faites frémir à petite ébullition 220ml d’eau (92°C). Pesez
+                        15g de café. Le moudre finement (plus fin que du sel de table).
+                    </span>
                 </div>
             </div>
-            <h2>La recette en détail</h2>
-        </section>
 
-        <div class="step-by-step-1">
-            <img src="/assets/bialetti-recipe/bialetti-1.jpg" alt="">
-            <div class="step-by-step-1-text">
-                <h4>ÉTAPE 1 : MOUDRE VOTRE CAFÉ</h4>
-                <span>
-                    Faites frémir à petite ébullition 220ml d’eau (92°C). Pesez
-                     15g de café. Le moudre finement (plus fin que du sel de table).
-                </span>
+            <div class="step-by-step">
+                <div class="step-by-step-text">
+                    <h4>ÉTAPE 2 : CHAUFFE DE L’EAU</h4>
+                    <span>Idéalement, commencez par chauffer l’eau à la bouilloire. Vous
+                        gagnerez du temps et cela évitera d’humidifier votre café à la préchauffe.
+                    </span>
+                </div>
+                <img src="/assets/bialetti-recipe/bialetti-2.jpg" alt="">
             </div>
-        </div>
 
-        <div class="step-by-step">
-            <div class="step-by-step-text">
-                <h4>ÉTAPE 2 : CHAUFFE DE L’EAU</h4>
-                <span>Idéalement, commencez par chauffer l’eau à la bouilloire. Vous
-                     gagnerez du temps et cela évitera d’humidifier votre café à la préchauffe.
-                </span>
+            <div class="step-by-step-odds">
+                <img src="/assets/bialetti-recipe/bialetti-3.jpg" alt="">
+                <div class="step-by-step-odds-text">
+                    <h4>ÉTAPE 3 : PRÉ-REMPLISSAGE</h4>
+                    <span>Remplissez la base de votre Moka (Bialetti) avec l’eau préchauffée juste au 
+                        dessous de la valve de sécurité.
+                    </span>
+                </div>
             </div>
-            <img src="/assets/bialetti-recipe/bialetti-2.jpg" alt="">
-        </div>
 
-        <div class="step-by-step-odds">
-            <img src="/assets/bialetti-recipe/bialetti-3.jpg" alt="">
-            <div class="step-by-step-odds-text">
-                <h4>ÉTAPE 3 : PRÉ-REMPLISSAGE</h4>
-                <span>Remplissez la base de votre Moka (Bialetti) avec l’eau préchauffée juste au 
-                    dessous de la valve de sécurité.
-                </span>
+            <div class="step-by-step">
+                <div class="step-by-step-text">
+                    <h4>ÉTAPE 4 : MISE EN PLACE</h4>
+                    <span>Remplissez le filtre en métal (entonnoir) avec du café finement moulu
+                        (entre le sucre glace et le sel de table). Le panier doit être rempli et 
+                        plat mais ne le tassez surtout pas. <br> Positionnez le dans la base de la Bialetti. <br>
+                        Astuce : tapotez le panier sur le côté pour répartir la mouture.
+                    </span>
+                </div>
+                <img src="/assets/bialetti-recipe/bialetti-4.jpg" alt="">
             </div>
-        </div>
 
-        <div class="step-by-step">
-            <div class="step-by-step-text">
-                <h4>ÉTAPE 4 : MISE EN PLACE</h4>
-                <span>Remplissez le filtre en métal (entonnoir) avec du café finement moulu
-                     (entre le sucre glace et le sel de table). Le panier doit être rempli et 
-                     plat mais ne le tassez surtout pas. <br> Positionnez le dans la base de la Bialetti. <br>
-                    Astuce : tapotez le panier sur le côté pour répartir la mouture.
-                </span>
+            <div class="step-by-step-odds">
+                <img src="/assets/bialetti-recipe/bialetti-5.jpg" alt="">
+                <div class="step-by-step-odds-text">
+                    <h4>ÉTAPE 5 : VISSAGE</h4>
+                    <span>Vissez fortement votre Moka. Si vous avez suivi notre recette et utilisé de l’eau
+                        chaude, utilisez un chiffon pour tenir la base.
+                    </span>
+                </div>
             </div>
-            <img src="/assets/bialetti-recipe/bialetti-4.jpg" alt="">
-        </div>
 
-        <div class="step-by-step-odds">
-            <img src="/assets/bialetti-recipe/bialetti-5.jpg" alt="">
-            <div class="step-by-step-odds-text">
-                <h4>ÉTAPE 5 : VISSAGE</h4>
-                <span>Vissez fortement votre Moka. Si vous avez suivi notre recette et utilisé de l’eau
-                     chaude, utilisez un chiffon pour tenir la base.
-                </span>
+            <div class="step-by-step">
+                <div class="step-by-step-text">
+                    <h4>ÉTAPE 6 : INFUSION</h4>
+                    <span>
+                        Pour une Moka (Bialetti) 3 tasses, le café apparait au bout de 5 minutes.
+                        Si cela arrive plus vite, votre mouture n’est passez fine ou vous n’utilisez
+                        pas assez de café (Inversement si trop long).
+                    </span>
+                </div>
+                <img src="/assets/bialetti-recipe/bialetti-6.jpg" alt="">
             </div>
-        </div>
 
-        <div class="step-by-step">
-            <div class="step-by-step-text">
-                <h4>ÉTAPE 6 : INFUSION</h4>
-                <span>
-                    Pour une Moka (Bialetti) 3 tasses, le café apparait au bout de 5 minutes.
-                     Si cela arrive plus vite, votre mouture n’est passez fine ou vous n’utilisez
-                      pas assez de café (Inversement si trop long).
-                </span>
-            </div>
-            <img src="/assets/bialetti-recipe/bialetti-6.jpg" alt="">
-        </div>
-
-        <div class="step-by-step-final">
-            <img src="/assets/bialetti-recipe/bialetti-7.jpg" alt="">
-            <div class="step-by-step-text-final">
-                <h4>ÉTAPE 7 : FIN</h4>
-                <span>Une minute après l’apparition du café, vous devez retirer votre Moka du feu et 
-                    servir vos convives. <br>
-                    Généralement, il reste un peu d’eau dans le réservoir du bas. Cela veut dire que vous
-                     n’avez pas sur-extrait votre café et par conséquent vous aurez évité l’amertume.
-                </span>
+            <div class="step-by-step-final">
+                <img src="/assets/bialetti-recipe/bialetti-7.jpg" alt="">
+                <div class="step-by-step-text-final">
+                    <h4>ÉTAPE 7 : FIN</h4>
+                    <span>Une minute après l’apparition du café, vous devez retirer votre Moka du feu et 
+                        servir vos convives. <br>
+                        Généralement, il reste un peu d’eau dans le réservoir du bas. Cela veut dire que vous
+                        n’avez pas sur-extrait votre café et par conséquent vous aurez évité l’amertume.
+                    </span>
+                </div>
             </div>
         </div>
     </main>

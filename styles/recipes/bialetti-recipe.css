@@ -6,16 +6,21 @@ body {
 }
 
 section {
-    max-height: 85vw;
+    margin: auto;
 }
 
 .container-top {
     display: flex;
+    justify-content: center;
 }
 
-.container-top img {
+.image-top {
+    z-index: -2;
+    width: 700px;
+    height: 854px;
     margin-left: 5em;
-    width: 45%;
+    background-image: url(/assets/bialetti-recipe/bialetti.jpg);
+    background-size: cover;
 }
 
 .container-top-text {
@@ -54,12 +59,20 @@ h3 {
     list-style: none;
 }
 
+.container-bottom-fixed {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: -300px;
+}
+
 .container-bottom {
-transform: translateY(-95%);
-background-color: #C0AA83;
-width: max-content;
-padding: 2.5em;
-margin-left: 3em;
+    z-index: -1;
+    background-color: #C0AA83;
+    width: max-content;
+    padding: 2.5em;
+    margin-left: 3em;
+    position: relative;
 }
 
 .container-bottom h3 {
@@ -73,16 +86,15 @@ margin-left: 3em;
 h2 {
     display: flex;
     justify-content: center;
-    transform: translateY(-500%);
     font-weight: 400;
     font-size: 30px;
+    margin: 3em 0;
 }
 
 /*step by step odds*/
 
 .step-by-step-1 {
     display: flex;
-    transform: translateY(-15%);
 }
 
 .step-by-step-1 img {
@@ -168,8 +180,8 @@ h2 {
 
 .step-by-step-final img {
     width: 45%;
-    margin-left: 3em;
-    margin-right: 2em;
+    margin-left: 2em;
+    margin-right: 3em;
 }
 
 .step-by-step-text-final {
@@ -178,8 +190,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     font-weight: 200;
-    margin-left: 2em;
-    margin-right: 3em;
+    margin-left: 3em;
 }
 
 .step-by-step-final h4 {

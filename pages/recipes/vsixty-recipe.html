@@ -6,27 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recette V60</title>
     <link rel="stylesheet" href="/styles/nav-bar.css">
-    <link rel="stylesheet" href="/styles/recipe/vsixty-recipe.css">
+    <link rel="stylesheet" href="/styles/recipes/vsixty-recipe.css">
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
 </head>
 <body>
 
     <header>
         <nav>
-            <div class="nav-bar-logo">
-                <img src="/assets/logo/logo-coffee-light.png" alt="" class="logo-coffee">
+            <div class="menu-container">
+                <div class="menu-btn-container">
+                    <div class="menu-btn">
+                        <button class="menu-btn_burger"></button>
+                    </div>
+                </div>
+                <div class="nav-bar-logo">
+                    <img src="/assets/logo/logo-coffee-light.png" alt="" class="logo-coffee">
+                </div>
             </div>
-            <div class="nav-bar-mid"></div>
             <div class="nav-bar-user">
                 <ul class="nav-list">
-                    <li class="nav-list-li">
-                        <img src="/assets/logo/shopping-cart.svg" alt="" class="logo-shopping-cart">
-                    </li>
                     <li class="nav-list-li">
                         <a href="contact.html" class="log-in">Se connecter</a>
                     </li>
                     <li class="nav-list-li">
-                        <img src="/assets/logo/burger-menu.svg" alt="" class="logo-burger">
+                        <a href="" class="shopping-link">
+                            <img src="/assets/logo/shopping-cart.svg" alt="" class="logo-shopping-cart">
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -34,118 +39,137 @@
     </header>
     
     <main>
-        <section>
-            <div>
-                <div class="container-top">
-                    <img src="/assets/vsixty-recipe/v60.jpg" alt="">
-                    <div class="container-top-text">
-                        <h1>Le V60</h1>
-                        <p>Le V60 est un cône en spirale inventé par la marque</p>
-                        <p> japonaise spécialisée Hario. Elle est une des </p>
-                        <p>méthodes douces les plus aromatiques et les plus</p>
-                        <p> utilisées dans le café de spécialité. Elle est conseillée</p>
-                        <p> pour des cafés ayant une grande complexité</p>
-                        <p>aromatique tels que les Micro-Lots.</p>
-                        <h3>Ce qu'il vous faut</h3>
+        <div class="hamburger-container">
+            <ul>
+                <a href="#">
+                    <li>Nos recettes</li>
+                </a>
+                <a href="#">
+                    <li>Notre histoire</li>
+                </a>
+                <a href="#">
+                    <li>Les association que l'on soutient</li>
+                </a>
+                <a href="#">
+                    <li>Voir plus</li>
+                </a>
+            </ul>
+        </div>
+        <div class="page-container">
+            <section>
+                <div>
+                    <div class="container-top">
+                        <div class="container-top-text">
+                            <h1>Le V60</h1>
+                            <p>Le V60 est un cône en spirale inventé par la marque</p>
+                            <p> japonaise spécialisée Hario. Elle est une des </p>
+                            <p>méthodes douces les plus aromatiques et les plus</p>
+                            <p> utilisées dans le café de spécialité. Elle est conseillée</p>
+                            <p> pour des cafés ayant une grande complexité</p>
+                            <p>aromatique tels que les Micro-Lots.</p>
+                            <h3>Ce qu'il vous faut</h3>
+                            <ul>
+                                <li>Hario – V60</li>
+                                <li>Filtre V60</li>
+                                <li>Bouilloire</li>
+                                <li>Balance</li>
+                                <li>Timer</li>
+                            </ul>
+                        </div>
+                        <div class="image-top"></div>
+                    </div>
+                    <div class="container-bottom-fixed">
+                    <div class="container-bottom">
+                        <h3>La recette express</h3>
                         <ul>
-                            <li>Hario – V60</li>
-                            <li>Filtre V60</li>
-                            <li>Bouilloire</li>
-                            <li>Balance</li>
-                            <li>Timer</li>
+                            <img src="" alt="">
+                            <li>20g de café moulu assez finement</li>
+                            <img src="" alt="">
+                            <li>300g d'eau à 92°C</li>
+                            <img src="" alt="">
+                            <li>2:30-3:00 minutes de temps d’infusion</li>
+                            <img src="" alt="">
+                            <li>Pré-infusion recommandée</li>
                         </ul>
                     </div>
                 </div>
-                <div class="container-bottom">
-                    <h3>La recette express</h3>
-                    <ul>
-                        <img src="" alt="">
-                        <li>20g de café moulu assez finement</li>
-                        <img src="" alt="">
-                        <li>300g d'eau à 92°C</li>
-                        <img src="" alt="">
-                        <li>2:30-3:00 minutes de temps d’infusion</li>
-                        <img src="" alt="">
-                        <li>Pré-infusion recommandée</li>
-                    </ul>
+                <h2>La recette en détail</h2>
+            </section>
+
+            <div class="step-by-step-1">
+                <img src="/assets/vsixty-recipe/v60-1.jpg" alt="">
+                <div class="step-by-step-1-text">
+                    <h4>ÉTAPE 1 : FAIRE FRÉMIR L’EAU & MOUDRE VOTRE CAFÉ</h4>
+                    <span>
+                        Faites frémir à petite ébullition 300ml d’eau (92°C). 
+                        Pesez 20g de café. Le moudre assez finement (à peu près
+                        la finesse du sel de table).
+                    </span>
                 </div>
             </div>
-            <h2>La recette en détail</h2>
-        </section>
 
-        <div class="step-by-step-1">
-            <img src="/assets/vsixty-recipe/v60-1.jpg" alt="">
-            <div class="step-by-step-1-text">
-                <h4>ÉTAPE 1 : FAIRE FRÉMIR L’EAU & MOUDRE VOTRE CAFÉ</h4>
-                <span>
-                    Faites frémir à petite ébullition 300ml d’eau (92°C). 
-                    Pesez 20g de café. Le moudre assez finement (à peu près
-                     la finesse du sel de table).
-                </span>
+            <div class="step-by-step">
+                <div class="step-by-step-text">
+                    <h4>ÉTAPE 2 : FILTRE & RINÇAGE</h4>
+                    <span>Positionnez le filtre en papier dans la V60. Ensuite, rincez
+                        le filtre afin d’enlever le goût du papier. <br>
+                        N’oubliez pas de vider l’eau.
+                    </span>
+                </div>
+                <img src="/assets/vsixty-recipe/v60-2.jpg" alt="">
             </div>
-        </div>
 
-        <div class="step-by-step">
-            <div class="step-by-step-text">
-                <h4>ÉTAPE 2 : FILTRE & RINÇAGE</h4>
-                <span>Positionnez le filtre en papier dans la V60. Ensuite, rincez
-                     le filtre afin d’enlever le goût du papier. <br>
-                    N’oubliez pas de vider l’eau.
-                </span>
+            <div class="step-by-step-odds">
+                <img src="/assets/vsixty-recipe/v60-3.jpg" alt="">
+                <div class="step-by-step-odds-text">
+                    <h4>ÉTAPE 3 : POSITIONNEMENT</h4>
+                    <span>Positionnez votre carafe et le V60 sur la balance.
+                        Versez les 20g de café et tarez.
+                    </span>
+                </div>
             </div>
-            <img src="/assets/vsixty-recipe/v60-2.jpg" alt="">
-        </div>
 
-        <div class="step-by-step-odds">
-            <img src="/assets/vsixty-recipe/v60-3.jpg" alt="">
-            <div class="step-by-step-odds-text">
-                <h4>ÉTAPE 3 : POSITIONNEMENT</h4>
-                <span>Positionnez votre carafe et le V60 sur la balance.
-                    Versez les 20g de café et tarez.
-                </span>
+            <div class="step-by-step">
+                <div class="step-by-step-text">
+                    <h4>ÉTAPE 4 : PRÉINFUSION</h4>
+                    <span>Commencez à chronométrer et saturez la mouture en versant 45 mL d’eau.
+                    </span>
+                </div>
+                <img src="/assets/vsixty-recipe/v60-4.jpg" alt="">
             </div>
-        </div>
 
-        <div class="step-by-step">
-            <div class="step-by-step-text">
-                <h4>ÉTAPE 4 : PRÉINFUSION</h4>
-                <span>Commencez à chronométrer et saturez la mouture en versant 45 mL d’eau.
-                </span>
+            <div class="step-by-step-odds">
+                <img src="/assets/vsixty-recipe/v60-5.jpg" alt="">
+                <div class="step-by-step-odds-text">
+                    <h4>ÉTAPE 5 : 2ÈME VERSEMENT</h4>
+                    <span>À 30 secondes, procédez à votre deuxième versement pour monter jusqu’à
+                        200mL d’eau en 30 secondes (soit 1 minute au timer).
+                    </span>
+                </div>
             </div>
-            <img src="/assets/vsixty-recipe/v60-4.jpg" alt="">
-        </div>
 
-        <div class="step-by-step-odds">
-            <img src="/assets/vsixty-recipe/v60-5.jpg" alt="">
-            <div class="step-by-step-odds-text">
-                <h4>ÉTAPE 5 : 2ÈME VERSEMENT</h4>
-                <span>À 30 secondes, procédez à votre deuxième versement pour monter jusqu’à
-                     200mL d’eau en 30 secondes (soit 1 minute au timer).
-                </span>
+            <div class="step-by-step">
+                <div class="step-by-step-text">
+                    <h4>ÉTAPE 6 : 3ÈME VERSEMENT</h4>
+                    <span>
+                        À 1:15 vous effectuerez votre 3ème et dernier versement pour atteindre 300mL.
+                        Idéalement, terminez à 1:40.
+                    </span>
+                </div>
+                <img src="/assets/vsixty-recipe/v60-6.jpg" alt="">
             </div>
-        </div>
 
-        <div class="step-by-step">
-            <div class="step-by-step-text">
-                <h4>ÉTAPE 6 : 3ÈME VERSEMENT</h4>
-                <span>
-                    À 1:15 vous effectuerez votre 3ème et dernier versement pour atteindre 300mL.
-                     Idéalement, terminez à 1:40.
-                </span>
-            </div>
-            <img src="/assets/vsixty-recipe/v60-6.jpg" alt="">
-        </div>
-
-        <div class="step-by-step-final">
-            <img src="/assets/vsixty-recipe/v60-7.jpg" alt="">
-            <div class="step-by-step-text-final">
-                <h4>ÉTAPE 7 : FIN</h4>
-                <span>Aux alentours de 2:30 – 3:00 votre café a fini de couler. Votre café en V60 est 
-                    prêt à être dégusté. <br> Astuce : n’hésitez pas à retirer votre V60 à 3 minutes même
-                     s’il reste de l’eau dans la V60. Cela évitera à votre café d’être gâché par l’amertume
-                      de la sur-extraction.
-                    Pour votre prochain café, n’hésitez pas à épaissir votre mouture (inversement si trop rapide).
-                </span>
+            <div class="step-by-step-final">
+                <img src="/assets/vsixty-recipe/v60-7.jpg" alt="">
+                <div class="step-by-step-text-final">
+                    <h4>ÉTAPE 7 : FIN</h4>
+                    <span>Aux alentours de 2:30 – 3:00 votre café a fini de couler. Votre café en V60 est 
+                        prêt à être dégusté. <br> Astuce : n’hésitez pas à retirer votre V60 à 3 minutes même
+                        s’il reste de l’eau dans la V60. Cela évitera à votre café d’être gâché par l’amertume
+                        de la sur-extraction.
+                        Pour votre prochain café, n’hésitez pas à épaissir votre mouture (inversement si trop rapide).
+                    </span>
+                </div>
             </div>
         </div>
     </main>
