@@ -31,7 +31,7 @@ class Item {
     }
 };
 
-const item1 = new Item('/assets/paquets/Sans background & ecriture/Ananas_Mangue-removebg-preview.png', "Ananas & Mangue", " à partir de 18€", true, "café saveur Ananas & Mangue", "Pérou","Fruité & Floral","Producteur","Les cafés de saison","false",);
+const item1 = new Item('/assets/paquets/Sans background & ecriture/Ananas_Mangue-removebg-preview.png', "Ananas & Mangue", " à partir de 18€", true, "café saveur Ananas & Mangue", "Pérou","Fruité & Floral","Producteur","Les cafés de saison","false","/pages/item/pineapple.html");
 const item2 = new Item('/assets/paquets/Sans background & ecriture/Caramel_noisette-removebg-preview.png', "Caramel & Noisette", " à partir de 18€", true, "café saveur Caramel & Noisette", "Brésil","Chocolaté & Corsé","Assemblage","Les cafés de saison","true",);
 const item3 = new Item('/assets/paquets/Sans background & ecriture/Chocolat_Caramel-removebg-preview.png', "Chocolat & Caramel", " à partir de 18€", true, "café saveur chocolat & Caramel", "Nicaragua","Chocolaté & Corsé","Producteur", "Les classiques","false",);
 const item4 = new Item('/assets/paquets/Sans background & ecriture/Chocolat_Noisette-removebg-preview.png', "Chocolat & Noisette", " à partir de 18€", true, "café saveur chocolat & Noisette", "Venezuela","Chocolaté & Corsé","Assemblage","Les cafés de saison","false",);
