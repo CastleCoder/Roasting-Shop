@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero-section{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.p1-hero-section{
+    font-size: 70px;
+    position: absolute;
+    top: 8em;
+    color: #FCFBF9;
+} 
+.p2-hero-section{
+    font-size: 17px;
+    color: #FCFBF9;
+    margin: 5em 1em 1em 1em;
+}
+
+.p3-hero-section{
+    font-size: 17px;
+    color: #FCFBF9;
+    margin: 0em 1em 1em 1em;
+}
+.button-hero-section{
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    border: none;
+    background-color: #C0AA83;
+    margin: 5em 0em;
+}
+
+.button{
+    width: 25%;
+    height: 5vh;
+    background-color: #C0AA83;
+    border-radius: 3px;
+    margin-right: 1.5em;
+    border: 1px solid #C0AA83;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 2em 0em 2em 0em;
+    color: #f8f6f2;
+    cursor: pointer;
+    
+}
+
+ /* section 1 */
+.section1{
+    background-color: #f1ede4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 2em;
+}
+
+.container-section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-section1{
+    width: 50%;
+    padding: 1em;
+    margin-top: 2em;
+}
+.h3-section1{
+    font-size: 18px;
+}
+
+.p-container-section1{
+    font-size: 17px;
+    margin-top: 10px;
+}
+.text-section1{
+    font-size: 17px;
+    width: 50%;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+
+/* section 2 */
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 3.5em;
+    background-color: #FCFBF9;
+}
+.container-section2{
+    width: 45%;
+    margin-left: 6em;
+    margin-right: 5em;
+}
+.image-section2{
+    width: 45%;
+}
+.p1-section2{
+    font-size: 20px;
+    color: #C0AA83;
+    letter-spacing: 3px;
+    margin-bottom: 1em;
+    font-weight: bold;
+    
+}
+.p2-section2{
+    font-size: 40px;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+}
+
+.p3-section2{
+    font-size: 17px;
+    margin-bottom: 0.5em;
+    margin-top: 00.5em;
+}
+
+/* section 3 */
+.section3{
+    background-color: #FCFBF9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    width: 100%; 
+}
+
+.image-section3{
+    background-color: #f1ede4;
+    margin: 1.5em 1.5em 1.5em 1.5em;    
+}
+.container1-section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.p1-section3{
+    font-size: 20px;
+    color: #C0AA83;
+    letter-spacing: 3px;
+    padding-top: 5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.p2-section3{
+    font-size: 40px;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+/* section 4 */
+.section4{
+    background-color: #FCFBF9;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    padding: 3.5em;
+
+}
+.container-section4{
+    width: 50%;
+    padding: 6em;
+    
+}
+.image-section4{
+    width: 60%;
+    margin: 3em 0em 0em 0em;
+}
+.p1-container-section4{
+    font-size: 20px;
+    color: #C0AA83;
+    letter-spacing: 3px;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+.p2-container-section4{
+    font-size: 40px;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+    color: #C0AA83;
+    font-weight: 35px;
+    margin-left: -7em;
+}
+.p4-container-section4{
+    margin-bottom: 0.5em;
+}
+.p3-container-section4, .p4-container-section4{
+    font-size: 17px;
+}
+
+/* section 5 */
+.section5{
+    background-color: #FCFBF9;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em 0em 4em 0em ;
+}
+
+
+.p-container-section5{
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+footer{
+    background-color: #f1ede4;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    height: 30vh;
+}
+
+
+.logo-footer{
+    width: 15%;
+}
+.container1-footer{
+    width: 35%;
+   display: flex;
+   justify-content: space-between;
+}
+.container3-footer{
+    margin: 1em 1em 1em 1em;
+}
+
+.p1-container2-footer{
+    font-size: 25px;
+}
+.liens-footer{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+}
+.p4-container2-footer{
+    margin: 1em 0em 0em 0em;
+}
+.logo-teamseas-footer{
+    width: 7%;
+}
+
+
+
+
+
+
+
+
+

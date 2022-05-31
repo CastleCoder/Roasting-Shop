@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+section{
+    background-image:linear-gradient(180deg,rgba(39,39,39,0.6) 0%,rgba(39,39,39,0.6) 100%), url(../assets/abonnement/caféier.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top 32%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.container-abonnement{
+    background-color: #f8f6f2;
+    width: 20%;
+    height: 70%;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8em;   
+}
+
+.logo-container{
+    width: 60%;
+}
+
+.email-button, .password-button, .connexion-button{
+    border-radius: 7px;
+    margin-right: 1.5em;
+    border: 2px solid #C0AA83;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 1.5em 0em 1.5em 0em;
+    cursor: pointer;
+}
+
+.p1-container{
+    font-size: 30px;
+}
+
+.email-button, .password-button{
+    width: 65%;
+    height: 5vh;
+    background-color: #f8f6f2;
+    color: #C0AA83;
+}
+
+.connexion-button{
+    width: 45%;
+    height: 5vh;
+    font-size: 16px;
+    background-color: #C0AA83;
+    color: #f8f6f2;
+}
+
+.p2-container{
+    font-size: small;
+}
