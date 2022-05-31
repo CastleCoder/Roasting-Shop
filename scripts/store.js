@@ -150,6 +150,7 @@ selectTag.addEventListener("change", (e) => {
    itemContainer.innerHTML = ``;
    myItem(newTagArr);
    myItem(newTagArr2);
+<<<<<<< HEAD
    
    arrlength = Number(newTagArr.length)+Number(newTagArr2.length);
   
@@ -159,7 +160,17 @@ selectTag.addEventListener("change", (e) => {
     arrlength = arrStore.length;
 
 }
+=======
+>>>>>>> store
 
+   arrlength = Number(newTagArr.length)+Number(newTagArr2.length);
+  
+   if (tagSelection === "none"){
+    myItem(arrStore)
+    console.log(arrStore);
+    arrlength = arrStore.length;
+
+}
 
    let showElementsSentence = document.querySelector("#top-div-filter");
    showElementsSentence.textContent = `AFFICHER TOUS LES ${arrlength} RÉSULTATS`
