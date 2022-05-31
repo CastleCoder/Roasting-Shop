@@ -150,18 +150,6 @@ selectTag.addEventListener("change", (e) => {
    itemContainer.innerHTML = ``;
    myItem(newTagArr);
    myItem(newTagArr2);
-<<<<<<< HEAD
-   
-   arrlength = Number(newTagArr.length)+Number(newTagArr2.length);
-  
-   if (tagSelection === "none"){
-    myItem(arrStore)
-    console.log(arrStore);
-    arrlength = arrStore.length;
-
-}
-=======
->>>>>>> store
 
    arrlength = Number(newTagArr.length)+Number(newTagArr2.length);
   

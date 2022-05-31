@@ -5,74 +5,183 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/accueil.css">
-    <title>Roasters Coffee - Torréfacteur de cafés de spécialité</title>
+    <link rel="stylesheet" href="../styles/nav-bar.css">
+    <script src="/scripts/nav-bar.js" defer></script>
+    <title> Roasters Coffee- Torréfacteur de cafés de spécialité</title>
 </head>
 <body>
-    <section>
-        hero section
-    </section>
+    
+    <header>
+        <nav>
+            <div class="menu-container">
+                <div class="menu-btn-container">
+                    <div class="menu-btn">
+                        <button class="menu-btn_burger"></button>
+                    </div>
+                </div>
+                <div class="nav-bar-logo">
+                    <img src="/assets/logo/logo-coffee-light.png" alt="" class="logo-coffee">
+                </div>
+            </div>
+            <div class="nav-bar-user">
+                <ul class="nav-list">
+                    <li class="nav-list-li">
+                        <a href="contact.html" class="log-in">Se connecter</a>
+                    </li>
+                    <li class="nav-list-li">
+                        <a href="/pages/store.html" class="shopping-link">
+                            <img src="/assets/logo/shopping-cart.svg" alt="" class="logo-shopping-cart">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <section>
-        <div>
-            <img src="/assets/accueil/sechage-cafe1.svg" alt="Table séchage café">
-            <h3>En direct des producteurs</h3>
-            <p>Nous sourçons les meilleurs cafés directement auprès des producteurs.</p>
+    <main>    
+        <div class="hamburger-container">
+            <ul>
+                <a href="/pages/accueil.html">
+                    <li>Accueil</li>
+                </a>
+                <a href="/pages/store.html">
+                    <li>Boutique</li>
+                </a>
+                <a href="/pages/nos-recettes.html">
+                    <li>Nos recettes</li>
+                </a>
+                <a href="#">
+                    <li>Notre histoire</li>
+                </a>
+                <a href="#">
+                    <li>Les associations partenaires</li>
+                </a>
+            </ul>
         </div>
-        <div>
-            <img src="../assets/accueil/torrefaction-cafe2.svg" alt="Torréfaction de café">
-            <h3>Torréfaction artisanale</h3>
-            <p>Chaque café est fraîchement torréfié et moulu pour vos jolies papilles.</p>
-        </div>
-        <div>
-            <img src="../assets/accueil/livraison-cafe3.svg" alt="Verseuse de café">
-            <h3>Livraison ultra-rapide</h3>
-            <p>Nos paquets sont expédiés le jour de votre commande et livrés sous 48h.</p>
-        </div>
-    </section>
+        <div class="page-container">
+        <!-- hero-section -->
+        <section class="hero-section">
+            <!-- <video src="../assets/accueil/coffee.mov" autoplay loop></video> -->
+            <video autoplay loop muted>
+                <source src="../assets/accueil/torrefaction-cafe.mp4">
+            </video>
+            <h1><img src="../assets/logo/logo-coffee-dark.png" alt="logo blanc"></h1>
+            <a href="#anchor-section1" class="scroll-down">
+                <button class="button-hero-section"><img src="../assets/accueil/bottom-chevron.png" alt="Chevron vers le bas"></button>
+            </a>
+            
+         
+                    
+        </section>
 
-    <section>
-        <h3> ABONNEMENT DECOUVERTE</h3>
-        <p>Recevez tous les mois des cafés d’exceptions en série limitée.</p>
-        <p>Découvrez des terroirs différents tous les mois et des cafés exclusifs pour les abonnés. Recevez des privilèges abonnés pour bénéficier de prix réduits sur vos accessoires.</p>
-        <button>Je m'abonne</button>
-        <img src="" alt="">
-    </section>
+        <!-- section 1 -->
+        <section id="anchor-section1" class="section1">
+            <div class="container-section1">
+                <img class="image-section1" src="../assets/accueil/dessin-sechage-cafe1.svg" alt="Dessin table séchage café">
+                <div class="text-section1">
+                    <h3 class="h3-section1">En direct des producteurs</h3>
+                    <p class="p-container-section1">Nous sourçons les meilleurs cafés directement auprès des producteurs.</p>
+                </div>
+            </div>
 
-    <section>
-        <h3>NOS CAFÉS DE SPÉCIALITÉ</h3>
-        <p>Une sélection des meilleurs terroirs</p>
-        <div>
-            <!-- 3 paquets café en background-image  -->
-            <button>DECOUVREZ NOS CAFES</button>
-        </div>
-    </section>
-        <!-- image en background à 50 % alignée à gauche(table tasse café) -->
-        <div>
-            <h3>ECONOMIQUE</h3>
-           <p>Notre abonnement gros buveur</p>
-           <p>Économisez jusqu’à 20% si votre consommation dépasse les 400g. Vous recevrez un café de saison dédié au filtre ou à l’espresso selon votre choix. Vous pourrez également profiter d’une découverte par saison avec 4 cafés différents tout au long de l’année.</p>
-           <p>Votre abonnement est 100% flexible et sans engagement.</p>
-           <button>JE M'ABONNE</button>
-        </div>
+            <div class="container-section1">
+                <img class="image-section1" src="../assets/accueil/dessin-torrefaction-cafe2.svg" alt="Dessin torréfaction de café">
+                <div class="text-section1">
+                    <h3 class="h3-section1">Torréfaction artisanale</h3>
+                    <p class="p-container-section1">Chaque café est fraîchement torréfié et moulu pour vos jolies papilles.</p>
+                </div>
+            </div>
 
-    <section>
+            <div class="container-section1">
+                <img class="image-section1" src="../assets/accueil/dessin-livraison-cafe3.svg" alt="Dessin verseuse de café">
+                <div class="text-section1">
+                    <h3 class="h3-section1">Livraison ultra-rapide</h3>
+                    <p class="p-container-section1">Nos paquets sont expédiés le jour de votre commande et livrés sous 48h.</p>  
+                </div>
+            </div>
+        </section>
+
+        <!-- section 2 -->
+        <section class="section2">
+            <div class="container-section2">
+                <p class="p1-section2"> ABONNEMENT DECOUVERTE</p>
+                <p class="p2-section2">Recevez tous les mois des cafés d’exceptions en série limitée.</p>
+                <p class="p3-section2">Découvrez des terroirs différents tous les mois et des cafés exclusifs pour les abonnés. Recevez des privilèges abonnés pour bénéficier de prix réduits sur vos accessoires.</p>
+                <a href="" class="button-container">JE M'ABONNE</a>
+            </div>
+            <img class="image-section2" src="../assets/accueil/paquet-cafe-table.png" alt="Paquet de café sur table">           
+        </section>
+
+        <!-- section3 -->
+        <section class="section3">
+            <div class="container1-section3">
+                <p class="p1-section3">NOS CAFÉS DE SPÉCIALITÉ</p>
+                <p class="p2-section3">Une sélection des meilleurs terroirs</p>    
+            </div>
+            
+            <div class="container2-section3">
+                <img class="image-section3" src="../assets/accueil/Chocolat_Noisette-removebg-preview.png" alt="Paquet café chocolat">  
+                <img class="image-section3" src="../assets/accueil/FleurDOranger_Limoncello-removebg-preview.png" alt="Paquet café fleur oranger"> 
+            </div>
+           
+                <div class="div-flex">
+                    <button class="button-coffee">DECOUVREZ NOS CAFES</button>
+                </div>    
+            
+        </section>
+
+        <!-- section 4 -->
+        <section class="section4">
+                <img class="image-section4" src="../assets/accueil/tasse-cafe-table.png" alt="Tasse café sur table avec sucre et vase">
+            <div class="container-section4">
+                <p class="p1-container-section4">ECONOMIQUE</p>
+                <p class="p2-container-section4">Notre abonnement gros buveur</p>
+                <p class="p3-container-section4">Économisez jusqu’à 20% si votre consommation dépasse les 400g. Vous recevrez un café de saison dédié au filtre ou à l’espresso selon votre choix. Vous pourrez également profiter d’une découverte par saison avec 4 cafés différents tout au long de l’année.</p>
+                <p class="p4-container-section4">Votre abonnement est 100% flexible et sans engagement.</p>
+                <a href="">
+                    <button class="button">JE M'ABONNE</button>
+                </a>
+            </div>
+        </section>
        
-       <div>
-           <!-- image en background cliquable les cafés bio -->
-            <h2>LES CAFES BIO</h2>
+        <!-- section 5 -->
+
+        <section class="section5">        
+                <div>
+                    <a href="">
+                    <img class="a-section5" src="../assets/accueil/les-cafes-bio.PNG" alt="café grain et moulu">
+                    </a>
+                </div>
+                
+                <a class="a-section5" href="">
+                    <img src="../assets/accueil/le-sourcing.PNG" alt="caféier">
+                </a>
+                <a class="a-section5" href="">
+                    <img src="../assets/accueil/les-recettes.PNG" alt="table carnet recettes">
+                </a>
+        </section>
+        </div>
+    </main>
+
+    <footer>
+        <img class="logo-footer" src="../assets/accueil/logo-coffee-light.png" alt="Logo Coffee Roasters">
+       
+       <div class="container1-footer">
+            <div>
+                <p class="p1-container2-footer"> Rostears Coffee</p> 
+                <p>110, rue de la Réserve</p>
+                <p>33000 BORDEAUX</p> 
+                <p class="p4-container2-footer">05 56 28 32 46</p>
+            </div>
+            <div class="container3-footer">
+                <a class="liens-footer" href="">1er lien vers page</a>
+                <a class="liens-footer" href="">2ème lien vers page</a>
+                <a class="liens-footer" href="https://teamseas.org/">Teamseas</a>
+                <a class="liens-footer" href="">4ème lien vers page</a>
+            </div> 
        </div> 
-       <div>
-           <!-- image en background cliquable le sourcing -->
-           <h2>LE SOURCING</h2>
-       </div>
-       <div>
-           <!-- image en background cliquable les cafés bio -->
-           <h2>LES RECETTES</h2>
-       </div>
-
-    </section>
-
-
+        <img class="logo-teamseas-footer" src="../assets/accueil/teamseas-logo.png" alt="Logo Teamseas">     
+    </footer>
     
 </body>
 </html>
