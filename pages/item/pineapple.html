@@ -5,127 +5,170 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ananas & Mangue</title>
-    <script src="/scripts/pineapple.js" defer></script>
+    <script src="/scripts/pineapple.js" defer ></script>
+    <script src="/scripts/nav-bar.js" defer ></script>
     <link rel="stylesheet" href="/styles/item/pineapple.css">
+    <link rel="stylesheet" href="/styles/nav-bar.css">
 </head>
 <body>
 
-    <header></header>
-
-    <main>
-
-
-        <section class="section1">
-            <div class="section1-top">
-                <div class="section1-top-left">
-                    <img src="/assets/paquets/Sans background & ecriture/Ananas_Mangue-removebg-preview.png" alt="">
-                </div>
-                <div class="section1-top-right">
-                    <div class="section1-top-right-top">
-                        <h1>El Paraiso #3</h1>
-                        <p id="country">Colombie</p>
-                        <h5>À partir de 6,00€</h5>
-                        <p id="description">Un nouveau lot aux notes d'ananas & mangue, un filtre gourmand et fruité !</p>
-                        <ul id="liste-description">
-                            <li><p>Variété :</p>Castillo</li>
-                            <li><p>Méthode :</p>Double Fermentation Anaérobie</li>
-                            <li><p>Producteur :</p>Diego Samuel Bermudez</li>
-                            <li><p>Score :</p>88+</li>
-                        </ul>
+    <header>
+        <nav>
+            <div class="menu-container">
+                <div class="menu-btn-container">
+                    <div class="menu-btn">
+                        <button class="menu-btn_burger"></button>
                     </div>
-                    <div class="section1-top-right-bottom">
-                        <h3>Poids</h3>
-                        <ul class="weight">
-                            <li class=><button>200G</button></li>
-                            <li class=><button>2 x 200G</button></li>
-                            <li class="format"><button>
-                                <p id="weight">1KG</p>
-                                <p id="text">économisez <br> -30%</p>
-                            </button></li>
-                        </ul>
-                        <div class ="choice">
-                            <div class="left">
-                                <h5>MOUTURE :</h5>
-                                <select name="mouture" id="grind">
-                                    <option value="grains">Grains</option>
-                                    <option value="espresso">Espresso</option>
-                                    <option value="italian">Italienne</option>
-                                    <option value="producer">Filtre</option>
-                                    <option value="piston">Piston</option>
-                                </select>
-                            </div>
-                            <div class="right">
-                                <h5>TORREFIÉ :</h5>
-                                <select name="filtre" id="filter">
-                                    <option value="filter">Filtre</option>
-                                </select>
+                </div>
+                <div class="nav-bar-logo">
+                    <img src="/assets/logo/logo-coffee-light.png" alt="" class="logo-coffee">
+                </div>
+            </div>
+            <div class="nav-bar-user">
+                <ul class="nav-list">
+                    <li class="nav-list-li">
+                        <a href="contact.html" class="log-in">Se connecter</a>
+                    </li>
+                    <li class="nav-list-li">
+                        <a href="/pages/store.html" class="shopping-link">
+                            <img src="/assets/logo/shopping-cart.svg" alt="" class="logo-shopping-cart">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <div class="hamburger-container">
+            <ul>
+                <a href="/pages/store.html">
+                    <li>Boutique</li>
+                </a>
+                <a href="/pages/nos-recettes.html">
+                    <li>Nos recettes</li>
+                </a>
+                <a href="#">
+                    <li>Notre histoire</li>
+                </a>
+                <a href="#">
+                    <li>Les associations partenaires</li>
+                </a>
+            </ul>
+        </div>
+        <div class="page-container">
+            <section class="section1">
+                <div class="section1-top">
+                    <div class="section1-top-left">
+                        <img src="/assets/paquets/Sans background & ecriture/Ananas_Mangue-removebg-preview.png" alt="">
+                    </div>
+                    <div class="section1-top-right">
+                        <div class="section1-top-right-top">
+                            <h1>El Paraiso #3</h1>
+                            <p id="country">Colombie</p>
+                            <h5>À partir de 6,00€</h5>
+                            <p id="description">Un nouveau lot aux notes d'ananas & mangue, un filtre gourmand et fruité !</p>
+                            <ul id="liste-description">
+                                <li><p>Variété :</p>Castillo</li>
+                                <li><p>Méthode :</p>Double Fermentation Anaérobie</li>
+                                <li><p>Producteur :</p>Diego Samuel Bermudez</li>
+                                <li><p>Score :</p>88+</li>
+                            </ul>
+                        </div>
+                        <div class="section1-top-right-bottom">
+                            <h3>Poids</h3>
+                            <ul class="weight">
+                                <li><button class="button">200G</button></li>
+                                <li><button class="button">2 x 200G</button></li>
+                                <li class="format"><button class="button">
+                                    <p id="weight">1KG</p>
+                                    <p id="text">économisez <br> -30%</p>
+                                </button></li>
+                            </ul>
+                            <div class ="choice">
+                                <div class="left">
+                                    <h5>MOUTURE :</h5>
+                                    <select name="mouture" id="grind">
+                                        <option value="grains">Grains</option>
+                                        <option value="espresso">Espresso</option>
+                                        <option value="italian">Italienne</option>
+                                        <option value="producer">Filtre</option>
+                                        <option value="piston">Piston</option>
+                                    </select>
+                                </div>
+                                <div class="right">
+                                    <h5>TORREFIÉ :</h5>
+                                    <select name="filtre" id="filter">
+                                        <option value="filter">Filtre</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="section1-center">
-                <h2>Notes de dégustation</h2>
-                <p>naturellement présentes</p>
-                <img src="/assets/item-pages/ananas.png" alt="">
-                <h5>Ananas - Mangue</h5>
-            </div>
-            <div class="section1-bottom">
-                <div class="description-product">
-                    <h5>ACIDITÉ :</h5>
-                    <p>JUTEUSE</p>
+                <div class="section1-center">
+                    <h2>Notes de dégustation</h2>
+                    <p>Naturellement présentes</p>
+                    <img src="/assets/item-pages/ananas.png" alt="">
+                    <h5>Ananas - Mangue</h5>
                 </div>
-                <div class="description-product">
-                    <h5>CORPS :</h5>
-                    <p>MOYEN</p>
-                </div>
-                <div class="description-product">
-                    <h5>RÉGION :</h5>
-                    <p>VALLE DEL CAUCA</p>
-                </div>
-                <div class="description-product">
-                    <h5>ALTITUDE :</h5>
-                    <p>+1500M</p>
-                </div>
-                <div class="description-product">
-                    <h5>RÉCOLTE :</h5>
-                    <p>AUTOMNE 2021</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section2">
-            <div class="section2-top">
-                <div class="section2-top-left">
-                    <img src="/assets/item-pages/DiegoSamuelBermenduez.jpeg" alt="">
-                </div>
-                <div class="section2-top-right">
-                    <h2>Diego Samuel Bermudez
-                    </h2>
-                    <p>Aboutissement du travail de Diego Samuel Bermudez, cette petite bombe fruitée aux accents sucrés nous arrive tout droit de la Finca El Paraiso, nichée à 1700 mètres d’altitude à El Tambo dans la région du Cauca en Colombie.</p>
-                    <p>Focalisée sur l’innovation tant sur le plan technologique qu’agronomique, ce jeune caféiculteur explore différentes façons d’améliorer la qualité à la tasse de ses cafés tout en contrôlant l’impact des changements climatiques que connaît le pays.</p>
-                    <p>Ce café est issu d’un lot mono-varietal de Castillo, une variété à haut rendement populaire en Colombie car résistante à la rouille du café. Son traitement en double fermentation anaérobique lui confère ici toute sa complexité aromatique et son caractère juteux.</p>
-                </div>
-            </div>
-            <!-- <div class="section2-bottom">
-                <h3>Les clients ayant acheté cet article ont également acheté</h3>
-                <div class="product-to-buy-more">
-                    <div>
-                        <div><img src="" alt=""></div>
-                        <p>Mexique</p>
-                        <h4></h4>
-                        <h4></h4>
+                <div class="section1-bottom">
+                    <div class="description-product">
+                        <h5>ACIDITÉ :</h5>
+                        <p>JUTEUSE</p>
                     </div>
-                    <div>
-                        <div><img src="" alt=""></div>
-                        <p>Mexique</p>
-                        <h4></h4>
-                        <h4></h4>
+                    <div class="description-product">
+                        <h5>CORPS :</h5>
+                        <p>MOYEN</p>
+                    </div>
+                    <div class="description-product">
+                        <h5>RÉGION :</h5>
+                        <p>VALLE DEL CAUCA</p>
+                    </div>
+                    <div class="description-product">
+                        <h5>ALTITUDE :</h5>
+                        <p>+1500M</p>
+                    </div>
+                    <div class="description-product">
+                        <h5>RÉCOLTE :</h5>
+                        <p>AUTOMNE 2021</p>
                     </div>
                 </div>
-            </div> -->
-        </section>
+            </section>
 
+            <section class="section2">
+                <div class="section2-top">
+                    <div class="section2-top-left">
+                        <img src="/assets/item-pages/DiegoSamuelBermenduez.jpeg" alt="">
+                    </div>
+                    <div class="section2-top-right">
+                        <h2>Diego Samuel Bermudez
+                        </h2>
+                        <p>Aboutissement du travail de Diego Samuel Bermudez, cette petite bombe fruitée aux accents sucrés nous arrive tout droit de la Finca El Paraiso, nichée à 1700 mètres d’altitude à El Tambo dans la région du Cauca en Colombie.</p>
+                        <p>Focalisée sur l’innovation tant sur le plan technologique qu’agronomique, ce jeune caféiculteur explore différentes façons d’améliorer la qualité à la tasse de ses cafés tout en contrôlant l’impact des changements climatiques que connaît le pays.</p>
+                        <p>Ce café est issu d’un lot mono-varietal de Castillo, une variété à haut rendement populaire en Colombie car résistante à la rouille du café. Son traitement en double fermentation anaérobique lui confère ici toute sa complexité aromatique et son caractère juteux.</p>
+                    </div>
+                </div>
+                <!-- <div class="section2-bottom">
+                    <h3>Les clients ayant acheté cet article ont également acheté</h3>
+                    <div class="product-to-buy-more">
+                        <div>
+                            <div><img src="" alt=""></div>
+                            <p>Mexique</p>
+                            <h4></h4>
+                            <h4></h4>
+                        </div>
+                        <div>
+                            <div><img src="" alt=""></div>
+                            <p>Mexique</p>
+                            <h4></h4>
+                            <h4></h4>
+                        </div>
+                    </div>
+                </div> -->
+            </section>
+        </div>
 
     </main>
 

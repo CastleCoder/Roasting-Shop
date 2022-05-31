@@ -5,7 +5,7 @@
 }
 
 
-main {
+.container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -40,6 +40,17 @@ main {
 
 .section1-top-right-top h1{
     color: #91c7d7;
+    margin: 1em 0;
+}
+
+#country {
+margin-bottom: 0.5em;
+font-size: 15px;
+font-weight: 200;
+}
+
+#description {
+    margin: 1em 0;
 }
 
 .section1-top-right-top ul{
@@ -110,10 +121,27 @@ li.format button{
     display: flex;
     align-items: center;
     column-gap: 1em;
+    margin-bottom: 1em;
 
 }
 
+.button {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
 
+h2 {
+    margin: 1em 0;
+}
+
+h5 {
+    margin: 1em 0;
+}
+
+.section1-center img {
+    margin: 1em 0;
+}
 
 #text{
     display: flex;
@@ -181,11 +209,17 @@ li.format button{
     width: 30%;
 }
 
+.section2-top-left img {
+    zoom: 80%;
+}
+
 .section2-top-right{
-    width: 45%;
     background-color: #8dbdce;
     color: white;
     font-size: 13px;
     padding: 2em 3em 2em 3em;
     line-height : 1.7;
+    margin-right: -200px;
+    margin-top: 300px;
+    margin-bottom: 3em;
 }
